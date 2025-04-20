@@ -20,12 +20,12 @@ jobs:
 
         # Generate the website
         - name: Publish
-          run: dotnet publish ./patch-history-app/patch-history-app.sln
+          run: dotnet publish ./patch-history-app/patch-history-app.sln -o build --noflag
 
         # Update base href
         - name: Change base href for GitHub Pages
           run: |
-            sed -i 's|<base href="/" />|<base href="/${{ github.repository }}/" />|' patch-history-app/build/wwwroot/index.html
+            sed -i 's|<base href="/" />|<base href="/${{ github.repository }}/" />|' build/wwwroot/index.html
 
         # Publish the website
         - name: Deploy to GitHub Pages
@@ -33,7 +33,7 @@ jobs:
           uses: peaceiris/actions-gh-pages@v4
           with:
             github_token: ${{ secrets.PUBLISH_TOKEN }}
-            publish_dir: ./patch-history-app/build/wwwroot
+            publish_dir: ./build/wwwroot
             # publish_branch: gh-pages
             # allow_empty_commit: false
             # keep_files: false
