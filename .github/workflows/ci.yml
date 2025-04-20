@@ -20,7 +20,7 @@ jobs:
 
         # Generate the website
         - name: Publish
-          run: dotnet publish patch-history-app.csproj
+          run: dotnet publish ~/patch-history-app/patch-history-app.csproj
 
         # Update base href
         - name: Change base href for GitHub Pages
