@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "patch-history-app", "patch-history-app\patch-history-app.csproj", "{F4E6A264-89DA-4419-8DB9-47CEB7BE2828}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "patch-history-app", "patch-history-app\patch-history-app.csproj", "{E878A8C7-67AC-43A8-8E29-BD7D48B73F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4E6A264-89DA-4419-8DB9-47CEB7BE2828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4E6A264-89DA-4419-8DB9-47CEB7BE2828}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4E6A264-89DA-4419-8DB9-47CEB7BE2828}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4E6A264-89DA-4419-8DB9-47CEB7BE2828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E878A8C7-67AC-43A8-8E29-BD7D48B73F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E878A8C7-67AC-43A8-8E29-BD7D48B73F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E878A8C7-67AC-43A8-8E29-BD7D48B73F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E878A8C7-67AC-43A8-8E29-BD7D48B73F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
