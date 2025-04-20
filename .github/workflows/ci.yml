@@ -25,15 +25,15 @@ jobs:
         # Update base href
         - name: Change base href for GitHub Pages
           run: |
-            sed -i 's|<base href="/" />|<base href="/${{ github.repository }}/" />|' build/wwwroot/index.html
+            sed -i 's|<base href="/" />|<base href="/${{ github.repository }}/" />|' patch-history-app/build/wwwroot/index.html
 
         # Publish the website
         - name: Deploy to GitHub Pages
           if: ${{ github.ref == 'refs/heads/master' }} # Publish only when the push is on master
-          uses: peaceiris/actions-gh-pages@v3.6.1
+          uses: peaceiris/actions-gh-pages@v4
           with:
             github_token: ${{ secrets.PUBLISH_TOKEN }}
-            publish_dir: ./build/wwwroot
+            publish_dir: ./patch-history-app/build/wwwroot
             # publish_branch: gh-pages
             # allow_empty_commit: false
             # keep_files: false
