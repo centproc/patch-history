@@ -20,7 +20,7 @@ jobs:
 
         # Generate the website
         - name: Publish
-          run: dotnet publish ./patch-history-app/patch-history-app.sln -o build --noflag
+          run: dotnet publish ./patch-history-app/patch-history-app.sln -o build --nologo
 
         # Update base href
         - name: Change base href for GitHub Pages
