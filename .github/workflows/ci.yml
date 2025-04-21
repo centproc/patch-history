@@ -13,10 +13,27 @@ jobs:
           uses: actions/setup-dotnet@v4
           with:
             dotnet-version: '8.0.x'
+        
+        # Checking runner location and directories - uncomment below for debugging purposes
+        - name: Check working directory
+          run: pwd
+  
+        - name: Listing root contents
+          run: ls -al
 
-        # Run tests
-        # - name: Test
-        #   run: dotnet test
+        - name: List project folder
+          run: ls -al ./patch-history-app
+      
+        # - name: List wwwroot/docs
+        #   run: ls -al ./build/wwwroot/docs
+        
+        - name: Update TOC Generator pathing
+          run: |
+            sed -i 's|var root = ".*";|var root = "./patch-history-app/patch-history-app/wwwroot/docs";|' ./patch-history-app/tools/TocGeneratorTool/Program.cs
+
+        # Generating TOC files
+        - name: Generate TOC files
+          run: dotnet run --project ./patch-history-app/tools/TocGeneratorTool ./patch-history-app/patch-history-app/wwwroot/docs
 
         # Generate the website
         - name: Publish
