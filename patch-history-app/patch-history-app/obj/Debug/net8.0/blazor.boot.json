@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "patch-history-app",
   "resources": {
-    "hash": "sha256-cRZS3JRBe4hPFmjzSkXIyUwxhRSkkeEJx00bOGf6qXY=",
+    "hash": "sha256-zl6YLrNBo1vYAU0u+OtjVxjQprNp/jqRseC2oQCoeyE=",
     "jsModuleNative": {
       "dotnet.native.8.0.6.wnx3asrtls.js": "sha256-YU6M9+jtDVnB8/wtrgIndOstzNh778Ls8g9XnbjorSk="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-masKveCdoRSahF99doEQk7H3YN2wHLVIE4M/Zu8OoD8=",
       "netstandard.wasm": "sha256-z1EJOmgVhSpTopn7Tek/0P//MKGF1I3NUD/sh4oLnwY=",
       "System.Private.CoreLib.wasm": "sha256-tuIWpR30u0OoEVtv4pXZ47mEpI2AmFBIyYFPnqDZZfw=",
-      "patch-history-app.wasm": "sha256-uVLMSY3OdkhlPaMP+fCMCbMWSD8D60wzaNhUkKlHGxQ="
+      "patch-history-app.wasm": "sha256-enTmpvTsaqIn0O1M54pZKFfrnSpdvafTaehXRhmTrEk="
     },
     "pdb": {
-      "patch-history-app.pdb": "sha256-V+engOA6rnx9J2FiYXziCE6zf/YPrgqQcFp6O9+VPyw="
+      "patch-history-app.pdb": "sha256-nSAgRWhuUNyTnKjQsOIdCdcOSgik0KG8kOGIbFYmUwY="
     }
   },
   "cacheBootResources": true,

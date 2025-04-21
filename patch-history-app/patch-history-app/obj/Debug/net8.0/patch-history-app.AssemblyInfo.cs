@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("patch-history-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55feceaa5091f8066b57ed221e91f37c85584592")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11ec256d4902a46ea059e0928fcfd7940c5ec1df")]
 [assembly: System.Reflection.AssemblyProductAttribute("patch-history-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("patch-history-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

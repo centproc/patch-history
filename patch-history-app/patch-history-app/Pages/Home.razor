@@ -12,14 +12,14 @@
 }
 else
 {
-    foreach (var category in _toc)
+    foreach (var game in _toc)
     {
-        <h2>@category.Title</h2>
+        <h2>@game.Title</h2>
         <ul>
-            @foreach (var article in category.Pages)
+            @foreach (var article in game.Pages)
             {
                 <li>
-                    <a href="@($"/docs/{category.Slug}/{article.Slug}")"> @article.Title </a>
+                    <a href="@($"/patch-history/docs/{game.Slug}/{article.Slug}")"> @article.Title </a>
                 </li>
             }
         </ul>
