@@ -1,4 +1,10 @@
 [
-    {"title": "Test 1", "slug": "test1"},
-    {"title": "Another test", "slug": "another-test"}
+  {
+    "Title": "Test 1",
+    "Slug": "test1"
+  },
+  {
+    "Title": "Another Test",
+    "Slug": "another-test"
+  }
 ]

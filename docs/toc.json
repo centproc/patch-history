@@ -1,17 +1,10 @@
 [
-    {
-        "title": "Game 1",
-        "slug": "game1",
-        "pages": [
-            {"title": "Test 1", "slug": "test1"},
-            {"title": "Another test", "slug": "another-test"}
-        ]
-    },
-    {
-        "title": "Tame 2",
-        "slug": "tame2",
-        "pages": [
-            {"title": "Just Antoher Test", "slug": "just-another-test"}
-        ]
-    }
+  {
+    "Title": "game1",
+    "Slug": "game1"
+  },
+  {
+    "Title": "tame2",
+    "Slug": "tame2"
+  }
 ]
