@@ -32,7 +32,7 @@ jobs:
         
         # Check that the href was updated
         - name: Output index.html after base href fix
-          run: cat ./build/index.html
+          run: cat ./build/wwwroot/index.html
 
         # Publish the website
         - name: Deploy to GitHub Pages
