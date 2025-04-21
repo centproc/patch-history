@@ -1,7 +1,56 @@
 ﻿@page "/"
+@inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
 
 <h1>Test 2, world!</h1>
+<p>Welcome to your new app.</p>
 
-Welcome to your new app.
+@if (_toc == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    foreach (var category in _toc)
+    {
+        <h2>@category.Title</h2>
+        <ul>
+            @foreach (var article in category.Pages)
+            {
+                <li>
+                    <a href="@($"/docs/{category.Slug}/{article.Slug}")"> @article.Title </a>
+                </li>
+            }
+        </ul>
+    }
+}
+
+@code {
+    private List<TocEntry>? _toc;
+
+        protected override async Task OnInitializedAsync()
+        {
+            try
+            {
+                _toc = await Http.GetFromJsonAsync<List<TocEntry>>("docs/toc.json");
+            }
+            catch
+            {
+                _toc = null;
+            }
+        }
+    
+    public class TocEntry
+    {
+        public string Title {get; set;} = "";
+        public string Slug {get; set;} = "";
+        public List<TocPage> Pages {get; set;} = new();
+    }
+
+    public class TocPage
+    {
+        public string Title {get; set;} = "";
+        public string Slug {get; set;} = "";
+    }
+}

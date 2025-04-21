@@ -1030,3 +1030,8 @@ C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-his
 C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\obj\Debug\net8.0\refint\patch-history-app.dll
 C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\obj\Debug\net8.0\patch-history-app.pdb
 C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\obj\Debug\net8.0\ref\patch-history-app.dll
+C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\bin\Debug\net8.0\wwwroot\_framework\Markdig.wasm
+C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\bin\Debug\net8.0\wwwroot\_framework\Markdig.wasm.gz
+C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\bin\Debug\net8.0\Markdig.dll
+C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\obj\Debug\net8.0\webcil\Markdig.wasm
+C:\Users\erics\Desktop\Personal Projects\FGCPatchHistory\patch-history\patch-history-app\patch-history-app\obj\Debug\net8.0\compressed\23iyu06li7.gz
