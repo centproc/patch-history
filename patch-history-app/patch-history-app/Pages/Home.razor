@@ -15,15 +15,15 @@ else
 {
     foreach (var game in _toc)
     {
-        <h2>@game.Title</h2>
-        <ul>
+        <h2><a href=@($"{Nav.BaseUri}docs/{game.Slug}")>@game.Title</a></h2>
+        @* <ul>
             @foreach (var article in game.Pages)
             {
                 <li>
                     <a href="@($"{Nav.BaseUri}docs/{game.Slug}/{article.Slug}")"> @article.Title </a>
                 </li>
             }
-        </ul>
+        </ul> *@
     }
 }
 

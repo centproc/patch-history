@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/9W7dQL3cB5qvvum5q58wyrQ4CIvMSD08T91KpDOTdY=",
+  "Hash": "qEQxh6ZPAdDyw70ZMFmzvetsbJ9JBcCydPOh2XP2jiM=",
   "Source": "patch-history-app",
   "BasePath": "/",
   "Mode": "Root",
@@ -7940,6 +7940,25 @@
       "OriginalItemSpec": "wwwroot\\docs\\game1\\test1.md"
     },
     {
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\toc.json",
+      "SourceId": "patch-history-app",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "docs/game1/toc.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\game1\\toc.json"
+    },
+    {
       "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\just-another-test.md",
       "SourceId": "patch-history-app",
       "SourceType": "Discovered",
@@ -7957,6 +7976,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\docs\\tame2\\just-another-test.md"
+    },
+    {
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\toc.json",
+      "SourceId": "patch-history-app",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "docs/tame2/toc.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\tame2\\toc.json"
     },
     {
       "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\toc.json",
