@@ -1,8 +1,8 @@
-﻿<h3>Docs</h3>
-
-@page "/docs/{*slug}"
+﻿@page "/docs/{*slug}"
 @inject HttpClient Http
 @using Markdig
+
+@* <h3>@{*slug}</h3> *@
 
 @code {
     [Parameter] public string? Slug {get; set;}
