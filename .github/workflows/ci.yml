@@ -28,9 +28,7 @@ jobs:
         # Update base href
         - name: Change base href for GitHub Pages
           run: |
-            sed -i 's|<base href="/" />|<base href="/${REPO}/" />|' build/wwwroot/index.html
-          env:
-            REPO: ${{ github.event.repository.name }}
+            sed -i 's|<base href="/" />|<base href="/${{ github.event.repository.name }}/" />|' build/wwwroot/index.html
         
         # Check that the href was updated
         - name: Output index.html after base href fix
