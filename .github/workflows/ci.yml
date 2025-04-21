@@ -27,6 +27,10 @@ jobs:
         # - name: List wwwroot/docs
         #   run: ls -al ./build/wwwroot/docs
         
+        - name: Update TOC Generator pathing
+          run: |
+            sed -i 's|var root = ".*";|var root = "./patch-history-app/patch-history-app/wwwroot/docs";|' ./patch-history-app/tools/TocGeneratorTool/Program.cs
+
         # Generating TOC files
         - name: Generate TOC files
           run: dotnet run --project ./patch-history-app/tools/TocGeneratorTool ./patch-history-app/patch-history-app/wwwroot/docs
