@@ -26,9 +26,9 @@ jobs:
           run: cp ./build/wwwroot/index.html ./build/wwwroot/404.html 
 
         # Update base href
-        # - name: Change base href for GitHub Pages
-        #   run: |
-        #     sed -i 's|<base href="/" />|<base href="/${{ github.repository }}/" />|' build/wwwroot/index.html
+        - name: Change base href for GitHub Pages
+          run: |
+            sed -i 's|<base href="/" />|<base href="/patch-history/" />|' build/wwwroot/index.html
         
         # Check that the href was updated
         - name: Output index.html after base href fix
