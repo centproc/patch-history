@@ -14,6 +14,19 @@ jobs:
           with:
             dotnet-version: '8.0.x'
         
+        # Checking runner location and directories - uncomment below for debugging purposes
+        - name: Check working directory
+          run: pwd
+  
+        - name: Listing root contents
+          run: ls -al
+
+        - name: List project folder
+          run: ls -al ./patch-history-app
+      
+        - name: List wwwroot/docs
+          run: ls -al ./build/wwwroot/docs
+        
         # Generating TOC files
         - name: Generate TOC files
           run: dotnet run --project ./patch-history-app/tools/TocGeneratorTool ./patch-history-app/patch-history-app/wwwroot/docs
@@ -34,19 +47,6 @@ jobs:
         # Check that the href was updated
         - name: Output index.html after base href fix
           run: cat ./build/wwwroot/index.html
-        
-        # Checking runner location and directories - uncomment below for debugging purposes
-        # - name: Check working directory
-        #   run: pwd
-        
-        # - name: Listing root contents
-        #   run: ls -al
-
-        # - name: List project folder
-        #   run: ls -al ./patch-history-app
-        
-        # - name: List wwwroot/docs
-        #   run: ls -al ./build/wwwroot/docs
 
         # Publish the website
         - name: Deploy to GitHub Pages
