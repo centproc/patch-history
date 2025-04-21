@@ -24,8 +24,8 @@ jobs:
         - name: List project folder
           run: ls -al ./patch-history-app
       
-        - name: List wwwroot/docs
-          run: ls -al ./build/wwwroot/docs
+        # - name: List wwwroot/docs
+        #   run: ls -al ./build/wwwroot/docs
         
         # Generating TOC files
         - name: Generate TOC files
