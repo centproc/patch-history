@@ -1,3 +1,6 @@
 [
-    {"title": "Just Antoher Test", "slug": "just-another-test"}
+  {
+    "Title": "Just Another test",
+    "Slug": "just-another-test"
+  }
 ]
