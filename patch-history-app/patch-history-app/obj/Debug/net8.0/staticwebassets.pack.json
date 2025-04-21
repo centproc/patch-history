@@ -33,8 +33,16 @@
       "PackagePath": "staticwebassets\\docs\\game1\\test1.md"
     },
     {
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\toc.json",
+      "PackagePath": "staticwebassets\\docs\\game1\\toc.json"
+    },
+    {
       "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\just-another-test.md",
       "PackagePath": "staticwebassets\\docs\\tame2\\just-another-test.md"
+    },
+    {
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\toc.json",
+      "PackagePath": "staticwebassets\\docs\\tame2\\toc.json"
     },
     {
       "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\toc.json",

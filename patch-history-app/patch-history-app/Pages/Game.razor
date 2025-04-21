@@ -1,0 +1,38 @@
+﻿@page "/docs/{gameSlug}"
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+<h3>Game</h3>
+
+@if (_toc == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var article in _toc)
+        {
+            <li>
+                <a href="@($"{Nav.BaseUri}docs/{gameSlug}/{article.Slug}")">@article.Title</a>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    [Parameter]
+    public string gameSlug {get; set;} = "";
+    private List<TocPage>? _toc;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _toc = await Http.GetFromJsonAsync<List<TocPage>>($"docs/{gameSlug}/toc.json");
+    }
+
+    public class TocPage
+    {
+        public string Title {get; set;} = "";
+        public string Slug {get; set;} = "";
+    }
+}
