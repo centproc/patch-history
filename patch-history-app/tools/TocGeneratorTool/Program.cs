@@ -25,19 +25,24 @@ foreach (var game in gameDirs)
     });
 
     var markdownFiles = Directory.GetFiles(game, "*.md");
-    var gameToc = new List<object>();
+    var gameToc = new List<(string Title, string Slug, DateTime Date)>();
 
     foreach (var file in markdownFiles)
     {
         var lines = File.ReadLines(file);
         string? heading = null;
+        DateTime date = DateTime.MinValue;
 
         foreach (var line in lines)
         {
-            var match = Regex.Match(line,@"^#\s+(.*)");
-            if (match.Success)
+            if (line.StartsWith("#"))
             {
-                heading = match.Groups[1].Value.Trim();
+                heading = line.TrimStart('#',' ').Trim();
+                var match = Regex.Match(heading, @"\b(\d{4}-\d{2}-\d{2})\b");
+                if(match.Success)
+                {
+                    DateTime.TryParse(match.Value, out date);
+                }
                 break;
             }
         }
@@ -46,11 +51,16 @@ foreach (var game in gameDirs)
         var title = heading ?? fallback;
         var slug = fallback.ToLower().Replace(" ","-");
 
-        gameToc.Add(new{ Title = title, Slug = slug });
+        gameToc.Add((Title: title, Slug: slug, Date: date ));
     }
 
+    var sortToc = gameToc
+        .OrderByDescending(entry => entry.Date)
+        .Select(entry => new { entry.Title, entry.Slug })
+        .ToList();
+
     var gameTocLocation = Path.Combine(game, "toc.json");
-    var gameJson = JsonSerializer.Serialize(gameToc, new JsonSerializerOptions {WriteIndented = true});
+    var gameJson = JsonSerializer.Serialize(sortToc, new JsonSerializerOptions {WriteIndented = true});
     File.WriteAllText(gameTocLocation, gameJson);
     Console.WriteLine($"Generated toc.json for {gameName}");
 }
