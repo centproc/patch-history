@@ -25,6 +25,22 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\another-test.md",
+      "PackagePath": "staticwebassets\\docs\\game1\\another-test.md"
+    },
+    {
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\test1.md",
+      "PackagePath": "staticwebassets\\docs\\game1\\test1.md"
+    },
+    {
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\just-another-test.md",
+      "PackagePath": "staticwebassets\\docs\\tame2\\just-another-test.md"
+    },
+    {
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\toc.json",
+      "PackagePath": "staticwebassets\\docs\\toc.json"
+    },
+    {
       "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

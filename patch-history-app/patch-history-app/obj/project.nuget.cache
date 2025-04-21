@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HcwACNI4ndM=",
+  "dgSpecHash": "JnUrphtNens=",
   "success": true,
   "projectFilePath": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\patch-history-app.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\erics\\.nuget\\packages\\markdig\\0.41.0\\markdig.0.41.0.nupkg.sha512",
     "C:\\Users\\erics\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.6\\microsoft.aspnetcore.authorization.8.0.6.nupkg.sha512",
     "C:\\Users\\erics\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.6\\microsoft.aspnetcore.components.8.0.6.nupkg.sha512",
     "C:\\Users\\erics\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.6\\microsoft.aspnetcore.components.analyzers.8.0.6.nupkg.sha512",

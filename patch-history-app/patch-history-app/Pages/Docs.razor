@@ -1,0 +1,37 @@
+﻿<h3>Docs</h3>
+
+@page "/docs/{*slug}"
+@inject HttpClient Http
+@using Markdig
+
+@code {
+    [Parameter] public string? Slug {get; set;}
+    private string? _htmlContent;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var path = string.IsNullOrWhiteSpace(Slug) ? "game1/test1" : Slug;
+        var markdownUrl = $"docs/{path}.md";
+
+        try
+        {
+            var markDown = await Http.GetStringAsync(markdownUrl);
+            _htmlContent = Markdown.ToHtml(markDown);
+        }
+        catch
+        {
+            _htmlContent = "<p>404: Docs not found.</p>";
+        }
+    }
+}
+
+<div class="prose max-w-full p-4">
+    @if (_htmlContent != null)
+    {
+        @((MarkupString)_htmlContent)
+    }
+    else
+    {
+        <p>Loading...</p>
+    }
+</div>
