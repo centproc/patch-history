@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject HttpClient Http
+@inject NavigationManager Nav
 
 <PageTitle>Home</PageTitle>
 
@@ -19,7 +20,7 @@ else
             @foreach (var article in game.Pages)
             {
                 <li>
-                    <a href="@($"/patch-history/docs/{game.Slug}/{article.Slug}")"> @article.Title </a>
+                    <a href="@($"{Nav.BaseUri}docs/{game.Slug}/{article.Slug}")"> @article.Title </a>
                 </li>
             }
         </ul>
