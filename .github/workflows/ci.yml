@@ -40,7 +40,7 @@ jobs:
           uses: peaceiris/actions-gh-pages@v4
           with:
             github_token: ${{ secrets.PUBLISH_TOKEN }}
-            publish_dir: ./build/
+            publish_dir: ./build/wwwroot
             publish_branch: gh-pages
             # allow_empty_commit: false
             # keep_files: false
