@@ -39,7 +39,7 @@ jobs:
           run: ls -al
 
         - name: List project folder
-          run: ls -al ./patch-history
+          run: ls -al ./patch-history-app
         
         - name: List wwwroot/docs
           run: ls -al ./build/wwwroot/docs
