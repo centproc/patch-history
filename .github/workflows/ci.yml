@@ -33,7 +33,7 @@ jobs:
 
         # Generating TOC files
         - name: Generate TOC files
-          run: dotnet run --project ./tools/TocGeneratorTool ../patch-history-app/patch-history-app/wwwroot/docs
+          run: dotnet run --project ./patch-history-app/tools/TocGeneratorTool ../patch-history-app/patch-history-app/wwwroot/docs
 
         # Publish the website
         - name: Deploy to GitHub Pages
