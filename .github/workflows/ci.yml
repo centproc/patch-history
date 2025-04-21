@@ -20,7 +20,7 @@ jobs:
 
         # Generate the website
         - name: Publish
-          run: dotnet publish ./patch-history-app/patch-history-app.sln -o build --nologo
+          run: dotnet publish ./patch-history-app/patch-history-app.sln -c Release -o build --nologo
 
         - name: Copy index.html to 404.html for SPA fallback
           run: cp ./build/wwwroot/index.html ./build/wwwroot/404.html 
