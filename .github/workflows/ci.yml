@@ -30,10 +30,23 @@ jobs:
         # Check that the href was updated
         - name: Output index.html after base href fix
           run: cat ./build/wwwroot/index.html
+        
+        # Checking runner location and directories
+        - name: Check working directory
+          run: pwd
+        
+        - name: Listing root contents
+          run: ls -al
 
-        # Generating TOC files
-        - name: Generate TOC files
-          run: dotnet run --project ./patch-history-app/tools/TocGeneratorTool ./patch-history-app/patch-history-app/wwwroot/docs
+        - name: List project folder
+          run: ls -al ./patch-history
+        
+        - name: List wwwroot/docs
+          run: ls -al ./build/wwwroot/docs
+        
+        # # Generating TOC files
+        # - name: Generate TOC files
+        #   run: dotnet run --project ./patch-history-app/tools/TocGeneratorTool ./patch-history-app/patch-history-app/wwwroot/docs
 
         # Publish the website
         - name: Deploy to GitHub Pages
