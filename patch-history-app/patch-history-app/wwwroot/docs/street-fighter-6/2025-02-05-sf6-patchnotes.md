@@ -22,11 +22,19 @@
 ---
 <br>
 
+---
+
+| test | table | woo|
+|------|-------|----|
+| here | is a  |tabl|
+
+---
+
 ## Manon
 
 | Changes                                      | Category       | Adjustment Details                            |
 |----------------------------------------------|----------------|-----------------------------------------------|
-|Normal/Overdrive Rond-point<br>(↓↘→ + Kick)      | Bug Fix        | Fixed an issue where it was not possible to cancel into a Super Art if this move was parried by the opponent.      |
+|Normal/Overdrive Rond-point<br>(↓↘→ + Kick)      | Bug Fix        | Fixed an issue where it was not possible to cancel into a Super Art if this move was parried by the opponent.|
 
 <br>
 
