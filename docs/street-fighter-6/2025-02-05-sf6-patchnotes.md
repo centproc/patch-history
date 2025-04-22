@@ -86,6 +86,8 @@
     </tbody>
 </table>
 
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+
 <br>
 
 <h2 id="kimberly">Kimberly</h2>
@@ -106,6 +108,8 @@
         </tr>
     </tbody>
 </table>
+
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
 <br>
 
@@ -128,6 +132,8 @@
     </tbody>
 </table>
 
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+
 <br>
 
 <h2 id="deejay">Dee Jay</h2>
@@ -149,6 +155,8 @@
     </tbody>
 </table>
 
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+
 <br>
 
 <h2 id="cammy">Cammy</h2>
@@ -169,6 +177,8 @@
         </tr>
     </tbody>
 </table>
+
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
 <br>
 
@@ -196,6 +206,8 @@
     </tbody>
 </table>
 
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+
 <br>
 
 <h2 id="zangief">Zangief</h2>
@@ -216,6 +228,8 @@
         </tr>
     </tbody>
 </table>
+
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
 <br>
 
@@ -238,6 +252,8 @@
     </tbody>
 </table>
 
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+
 <br>
 
 <h2 id="ed">Ed</h2>
@@ -258,6 +274,8 @@
         </tr>
     </tbody>
 </table>
+
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
 <br>
 
@@ -280,6 +298,8 @@
     </tbody>
 </table>
 
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+
 <br>
 
 <h2 id="mbison">M. Bison</h2>
@@ -300,6 +320,8 @@
         </tr>
     </tbody>
 </table>
+
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
 <br>
 
@@ -322,9 +344,8 @@
     </tbody>
 </table>
 
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+
 <br>
 
 ---
-<br>
-
-<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top">return to top</a></strong>
