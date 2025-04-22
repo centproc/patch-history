@@ -327,4 +327,4 @@
 ---
 <br>
 
-<strong><a href="#top">return to top</a></strong>
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top">return to top</a></strong>
