@@ -38,7 +38,7 @@
 
 ### Specific character updates this patch
 
-<table class="table-style">
+<table class="character-table-style">
     <tbody>
         <tr>
             <td><a href="">Manon</a></td>
