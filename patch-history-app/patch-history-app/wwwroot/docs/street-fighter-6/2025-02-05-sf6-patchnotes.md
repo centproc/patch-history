@@ -28,6 +28,26 @@
 | ------ | ------- | ---- |
 | here   | is a    |tabl  |
 
+<table>
+    <thead>
+        <th>Changes</th>
+        <th>Category</th>
+        <th>Adjustment Details</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>some test</td>
+            <td>another test</td>
+            <td>a third test</td>
+        </tr>
+        <tr>
+            <td>double test</td>
+            <td>yas test</td>
+            <td>a third, third test</td>
+        </tr>
+    </tbody>
+</table>
+
 ---
 
 ## Manon
