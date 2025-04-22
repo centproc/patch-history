@@ -24,9 +24,9 @@
 
 ---
 
-| test | table | woo|
-|------|-------|----|
-| here | is a  |tabl|
+| test   | table   | woo  |
+| ------ | ------- | ---- |
+| here   | is a    |tabl  |
 
 ---
 
