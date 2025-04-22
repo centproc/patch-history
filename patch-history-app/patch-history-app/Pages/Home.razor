@@ -14,22 +14,14 @@
 }
 else
 {
-    foreach (var game in _toc)
-    {   
-        <ul>
-            <li>
-                <h3><a href=@($"{Nav.BaseUri}docs/{game.Slug}")>@game.Title</a></h3>
-            </li>
-        </ul>
-        @* <ul>
-            @foreach (var article in game.Pages)
-            {
-                <li>
-                    <a href="@($"{Nav.BaseUri}docs/{game.Slug}/{article.Slug}")"> @article.Title </a>
-                </li>
-            }
-        </ul> *@
-    }
+    <table class="character-table-style">
+    <tbody>
+        <tr>
+            <td><a href="/patch-history/docs/street-fighter-6">Street Fighter 6</a></td>
+            <td><a href="/patch-history/docs/tekken-8">Tekken 8</a></td>
+        </tr>
+    </tbody>
+</table>
 }
 
 @code {
