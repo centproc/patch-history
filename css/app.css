@@ -2,6 +2,10 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+html {
+    scroll-padding-top: 80px;
+}
+
 h1:focus {
     outline: none;
 }
@@ -97,6 +101,15 @@ a, .btn-link {
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading");
     }
+
+/* .bottom-row {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+} */
 
 code {
     color: #c02d76;
