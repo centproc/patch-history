@@ -1,6 +1,6 @@
 # 2025-02-05 Street Fighter 6 Battle Changes patch notes
 
-### General Changes
+<h3 id="top">General Changes</h3>
 
 <br>
 
@@ -41,22 +41,22 @@
 <table class="character-table-style">
     <tbody>
         <tr>
-            <td><a href="">Manon</a></td>
-            <td><a href="">Kimberly</a></td>
-            <td><a href="">Marisa</a></td>
-            <td><a href="">Deejay</a></td>
+            <td><a href="#manon">Manon</a></td>
+            <td><a href="#kimberly">Kimberly</a></td>
+            <td><a href="#marisa">Marisa</a></td>
+            <td><a href="#deejay">Deejay</a></td>
         </tr>
         <tr>
-            <td><a href="">Cammy</a></td>
-            <td><a href="">Chun-Li</a></td>
-            <td><a href="">Zangief</a></td>
-            <td><a href="">Rashi</a></td>
+            <td><a href="#cammy">Cammy</a></td>
+            <td><a href="#chunli">Chun-Li</a></td>
+            <td><a href="#zangief">Zangief</a></td>
+            <td><a href="#rashid">Rashid</a></td>
         </tr>
         <tr>
-            <td><a href="">Ed</a></td>
-            <td><a href="">Akuma</a></td>
-            <td><a href="">M. Bison</a></td>
-            <td><a href="">Terry</a></td>
+            <td><a href="#ed">Ed</a></td>
+            <td><a href="#akuma">Akuma</a></td>
+            <td><a href="#mbison">M. Bison</a></td>
+            <td><a href="#terry">Terry</a></td>
         </tr>
     </tbody>
 </table>
@@ -67,7 +67,7 @@
 
 <br>
 
-## Manon
+<h2 id="manon">Manon</h2>
 
 <br>
 
@@ -88,7 +88,7 @@
 
 <br>
 
-## Kimberly
+<h2 id="kimberly">Kimberly</h2>
 
 <br>
 
@@ -109,7 +109,7 @@
 
 <br>
 
-## Marisa
+<h2 id="marisa">Marisa</h2>
 
 <br>
 
@@ -130,7 +130,7 @@
 
 <br>
 
-## Deejay
+<h2 id="deejay">Deejay</h2>
 
 <br>
 
@@ -151,7 +151,7 @@
 
 <br>
 
-## Cammy
+<h2 id="cammy">Cammy</h2>
 
 <br>
 
@@ -172,7 +172,7 @@
 
 <br>
 
-## Chun-Li
+<h2 id="chunli">Chun-Li</h2>
 
 <br>
 
@@ -198,7 +198,7 @@
 
 <br>
 
-## Zangief
+<h2 id="zangief">Zangief</h2>
 
 <br>
 
@@ -219,7 +219,7 @@
 
 <br>
 
-## Rashid
+<h2 id="rashid">Rashid</h2>
 
 <br>
 
@@ -240,7 +240,7 @@
 
 <br>
 
-## Ed
+<h2 id="ed">Ed</h2>
 
 <br>
 
@@ -261,7 +261,7 @@
 
 <br>
 
-## Akuma
+<h2 id="akuma">Akuma</h2>
 
 <br>
 
@@ -282,7 +282,7 @@
 
 <br>
 
-## M. Bison
+<h2 id="mbison">M. Bison</h2>
 
 <br>
 
@@ -303,7 +303,7 @@
 
 <br>
 
-## Terry
+<h2 id="terry">Terry</h2>
 
 <br>
 
@@ -327,4 +327,4 @@
 ---
 <br>
 
-<strong>[return to the top](#general-changes)</strong>
+<strong><a href="#top">return to top</a></strong>
