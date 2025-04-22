@@ -41,22 +41,22 @@
 <table class="character-table-style">
     <tbody>
         <tr>
-            <td><a href="#manon">Manon</a></td>
-            <td><a href="#kimberly">Kimberly</a></td>
-            <td><a href="#marisa">Marisa</a></td>
-            <td><a href="#deejay">Deejay</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#manon">Manon</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#kimberly">Kimberly</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#marisa">Marisa</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#deejay">Dee Jay</a></td>
         </tr>
         <tr>
-            <td><a href="#cammy">Cammy</a></td>
-            <td><a href="#chunli">Chun-Li</a></td>
-            <td><a href="#zangief">Zangief</a></td>
-            <td><a href="#rashid">Rashid</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#cammy">Cammy</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#chunli">Chun-Li</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#zangief">Zangief</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#rashid">Rashid</a></td>
         </tr>
         <tr>
-            <td><a href="#ed">Ed</a></td>
-            <td><a href="#akuma">Akuma</a></td>
-            <td><a href="#mbison">M. Bison</a></td>
-            <td><a href="#terry">Terry</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#ed">Ed</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#akuma">Akuma</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#mbison">M. Bison</a></td>
+            <td><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#terry">Terry</a></td>
         </tr>
     </tbody>
 </table>
@@ -130,7 +130,7 @@
 
 <br>
 
-<h2 id="deejay">Deejay</h2>
+<h2 id="deejay">Dee Jay</h2>
 
 <br>
 
