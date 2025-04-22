@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qEQxh6ZPAdDyw70ZMFmzvetsbJ9JBcCydPOh2XP2jiM=",
+  "Hash": "bSrskJemVJOOqUW9rxJZkPqAerrcU7Wj5Ow9IqdU6UU=",
   "Source": "patch-history-app",
   "BasePath": "/",
   "Mode": "Root",
@@ -7902,12 +7902,12 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\another-test.md",
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\2025-02-05-sf6-patchnotes.md",
       "SourceId": "patch-history-app",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "docs/game1/another-test.md",
+      "RelativePath": "docs/street-fighter-6/2025-02-05-sf6-patchnotes.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7918,15 +7918,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\docs\\game1\\another-test.md"
+      "OriginalItemSpec": "wwwroot\\docs\\street-fighter-6\\2025-02-05-sf6-patchnotes.md"
     },
     {
-      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\test1.md",
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\markdown-again.md",
       "SourceId": "patch-history-app",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "docs/game1/test1.md",
+      "RelativePath": "docs/street-fighter-6/markdown-again.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7937,15 +7937,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\docs\\game1\\test1.md"
+      "OriginalItemSpec": "wwwroot\\docs\\street-fighter-6\\markdown-again.md"
     },
     {
-      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\toc.json",
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\test1.md",
       "SourceId": "patch-history-app",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "docs/game1/toc.json",
+      "RelativePath": "docs/street-fighter-6/test1.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7956,15 +7956,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\docs\\game1\\toc.json"
+      "OriginalItemSpec": "wwwroot\\docs\\street-fighter-6\\test1.md"
     },
     {
-      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\just-another-test.md",
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\toc.json",
       "SourceId": "patch-history-app",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "docs/tame2/just-another-test.md",
+      "RelativePath": "docs/street-fighter-6/toc.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7975,15 +7975,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\docs\\tame2\\just-another-test.md"
+      "OriginalItemSpec": "wwwroot\\docs\\street-fighter-6\\toc.json"
     },
     {
-      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\toc.json",
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tekken-8\\just-another-test.md",
       "SourceId": "patch-history-app",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "docs/tame2/toc.json",
+      "RelativePath": "docs/tekken-8/just-another-test.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7994,7 +7994,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\docs\\tame2\\toc.json"
+      "OriginalItemSpec": "wwwroot\\docs\\tekken-8\\just-another-test.md"
+    },
+    {
+      "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tekken-8\\toc.json",
+      "SourceId": "patch-history-app",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "docs/tekken-8/toc.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\tekken-8\\toc.json"
     },
     {
       "Identity": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\toc.json",

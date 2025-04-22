@@ -25,24 +25,28 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\another-test.md",
-      "PackagePath": "staticwebassets\\docs\\game1\\another-test.md"
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\2025-02-05-sf6-patchnotes.md",
+      "PackagePath": "staticwebassets\\docs\\street-fighter-6\\2025-02-05-sf6-patchnotes.md"
     },
     {
-      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\test1.md",
-      "PackagePath": "staticwebassets\\docs\\game1\\test1.md"
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\markdown-again.md",
+      "PackagePath": "staticwebassets\\docs\\street-fighter-6\\markdown-again.md"
     },
     {
-      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\game1\\toc.json",
-      "PackagePath": "staticwebassets\\docs\\game1\\toc.json"
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\test1.md",
+      "PackagePath": "staticwebassets\\docs\\street-fighter-6\\test1.md"
     },
     {
-      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\just-another-test.md",
-      "PackagePath": "staticwebassets\\docs\\tame2\\just-another-test.md"
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\street-fighter-6\\toc.json",
+      "PackagePath": "staticwebassets\\docs\\street-fighter-6\\toc.json"
     },
     {
-      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tame2\\toc.json",
-      "PackagePath": "staticwebassets\\docs\\tame2\\toc.json"
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tekken-8\\just-another-test.md",
+      "PackagePath": "staticwebassets\\docs\\tekken-8\\just-another-test.md"
+    },
+    {
+      "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\tekken-8\\toc.json",
+      "PackagePath": "staticwebassets\\docs\\tekken-8\\toc.json"
     },
     {
       "Id": "C:\\Users\\erics\\Desktop\\Personal Projects\\FGCPatchHistory\\patch-history\\patch-history-app\\patch-history-app\\wwwroot\\docs\\toc.json",

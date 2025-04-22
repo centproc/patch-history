@@ -102,14 +102,40 @@ code {
     color: #c02d76;
 }
 
+/* Table styling */
+
 .table-style {
     border-collapse: collapse;
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+  .table-style thead {
+    background-color: #f0f0f0;
+  }
+  
+  .table-style thead th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
   
   .table-style td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  /* Table styling for single cell */
+  .characer-table-style {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .character-table-style td {
     border: 1px solid #ccc;
     padding: 8px;
   }
@@ -117,4 +143,8 @@ code {
   /* Hover effect */
   .table-style tr:hover td {
     background-color: #f5f5f5;
+  }
+
+  .character-table-style td:hover {
+    background-color: #e0eaff;
   }
