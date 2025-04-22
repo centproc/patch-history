@@ -4,7 +4,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -38,7 +38,7 @@
 
 ### Specific character updates this patch
 
-<table>
+<table class="table-style">
     <tbody>
         <tr>
             <td><a href="">Manon</a></td>
@@ -71,7 +71,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -92,7 +92,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -113,7 +113,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -134,7 +134,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -155,7 +155,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -176,7 +176,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -202,7 +202,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -223,7 +223,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -244,7 +244,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -265,7 +265,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -286,7 +286,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
@@ -307,7 +307,7 @@
 
 <br>
 
-<table>
+<table class="table-style">
     <thead>
         <th>Changes</th>
         <th>Category</th>
