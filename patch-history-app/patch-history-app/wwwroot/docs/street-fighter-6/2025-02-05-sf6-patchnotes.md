@@ -8,6 +8,36 @@
 | Drive Impact                             | Bug Fixes      | Fixed an issue that caused the input buffer time to be shorter than normal in cases where the attack did not hit the opponent after absorbing a blow with super armor.     |
 | Drive Reversal (From Block/Recovery)     | Bug Fixes      | The backward movement parameters of the first frame have been removed to align with how this technique performs for other characters.<br><br>Impacted Characters: Kimberly,Blanka |
 | Perfect Parry                            | Adjustment     | If a multi-hit attack is Perfect Parried, it is no longer possible to cancel from the 2nd attack and on.<br><br>This fix was implemented during the 12.02.2024 update, but was rolled back due to a known issue. That issue has now been resolved, so this is being re-implemented with this update.  |
+---
+<table>
+    <thead>
+        <th>Changes</th>
+        <th>Category</th>
+        <th>Adjustment Details</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Character Guides & Tutorials  </td>
+            <td>Bug Fixes</td>
+            <td>Some character guides and tutorials had replays that didn't play properly, or text that was inaccurate due to changes made during previous battle adjustment updates. These have now been fixed.</td>
+        </tr>
+        <tr>
+            <td>Drive Impact</td>
+            <td>Bug Fixes</td>
+            <td>Fixed an issue that caused the input buffer time to be shorter than normal in cases where the attack did not hit the opponent after absorbing a blow with super armor.</td>
+        </tr>
+        <tr>
+            <td>Drive Reversal (From Block/Recovery)</td>
+            <td>Bug Fixes</td>
+            <td>	The backward movement parameters of the first frame have been removed to align with how this technique performs for other characters.<br><br>Impacted Characters: Kimberly,Blanka</td>
+        </tr>
+        <tr>
+            <td>Perfect Parry</td>
+            <td>Adjustment</td>
+            <td>If a multi-hit attack is Perfect Parried, it is no longer possible to cancel from the 2nd attack and on.<br><br>This fix was implemented during the 12.02.2024 update, but was rolled back due to a known issue. That issue has now been resolved, so this is being re-implemented with this update.</td>
+        </tr>
+    </tbody>
+</table>
 
 ---
 
@@ -23,10 +53,6 @@
 <br>
 
 ---
-
-| test   | table   | woo  |
-| ------ | ------- | ---- |
-| here   | is a    |tabl  |
 
 <table>
     <thead>
