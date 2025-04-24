@@ -32,6 +32,9 @@ var sb = new StringBuilder();
 sb.AppendLine($"# {dateInput} - {nameInput.Replace("-", " ").ToUpperInvariant()}");
 sb.AppendLine();
 sb.AppendLine("<h3 id=\"top\">General Changes</h3>");
+sb.AppendLine("<strong><a href=\"\" style=\"text-decoration: none;\">back to patch list</a></strong>")
+sb.AppendLine();
+sb.AppendLine();
 sb.AppendLine();
 sb.AppendLine("<table class=\"table-style\">");
 sb.AppendLine("<thead><tr><th>Changes</th><th>Category</th><th>Adjustment Details</th></tr></thead>");
@@ -73,7 +76,7 @@ foreach(var section in sections)
     sb.AppendLine("</tbody>");
     sb.AppendLine("</table>");
     sb.AppendLine();
-    sb.AppendLine("<strong><a href=\"#top\" style=\"text-decoration: none;\">return to top</a></strong>");
+    sb.AppendLine("<strong><a href=\"#top\" style=\"text-decoration: none;\">return to top</a></strong> - <strong><a href=\"\" style=\"text-decoration: none;\">back to patch list</a></strong>");
     sb.AppendLine();
 }
 
