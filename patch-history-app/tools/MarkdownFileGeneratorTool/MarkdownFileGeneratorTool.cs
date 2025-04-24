@@ -30,6 +30,8 @@ if(!int.TryParse(Console.ReadLine(), out int sectionAmt) || sectionAmt < 1)
 var sb = new StringBuilder();
 
 sb.AppendLine($"# {dateInput} - {nameInput.Replace("-", " ").ToUpperInvariant()}");
+sb.AppendLine("---");
+sb.AppendLine("<br>");
 sb.AppendLine();
 sb.AppendLine("<h3 id=\"top\">General Changes</h3>");
 sb.AppendLine("<strong><a href=\"\" style=\"text-decoration: none;\">back to patch list</a></strong>")

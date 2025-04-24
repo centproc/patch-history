@@ -1,4 +1,6 @@
 # 2023-12-01 - SF6 PATCHNOTES
+---
+<br>
 
 <h3 id="top">General Changes</h3>
 <strong><a href="/patch-history/docs/street-fighter-6/" style="text-decoration: none;">back to patch list</a></strong>
