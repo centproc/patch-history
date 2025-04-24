@@ -1,4 +1,4 @@
-# 2025-02-05 Street Fighter 6 Battle Changes patch notes
+# 2025-02-05 - SF6 PATCHNOTES
 
 <h3 id="top">General Changes</h3>
 
