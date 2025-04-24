@@ -41,6 +41,7 @@ sb.AppendLine("</tbody>");
 sb.AppendLine("</table>");
 sb.AppendLine();
 sb.AppendLine("<!-- Section Index -->");
+sb.AppendLine("<h3>Specific character updates this patch</h3>");
 sb.AppendLine("<table class=\"character-table-style\">");
 sb.AppendLine("<tbody>");
 sb.AppendLine("<tr><td></td><td></td><td></td><td></td></tr>");
