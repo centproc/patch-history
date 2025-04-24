@@ -2,6 +2,8 @@
 
 <h3 id="top">General Changes</h3>
 
+<strong><a href="/patch-history/docs/street-fighter-6/" style="text-decoration: none;">back to patch list</a></strong>
+<br>
 <br>
 
 <table class="table-style">
@@ -344,7 +346,7 @@
     </tbody>
 </table>
 
-<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
+<strong><a href="/patch-history/docs/street-fighter-6/2025-02-05-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong> - <strong><a href="/patch-history/docs/street-fighter-6/" style="text-decoration: none;">back to patch list</a></strong>
 
 <br>
 
