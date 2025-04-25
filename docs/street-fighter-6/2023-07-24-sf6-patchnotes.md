@@ -83,7 +83,11 @@ Minor miscellaneous issues were fixed.
 
 ---
 
+<br> 
+
 <h2 id="luke">Luke</h2>
+
+<br>
 
 > <h4>Modern Controls</h4>
 <p>
@@ -103,7 +107,11 @@ Adjusted the hitstop values on the super armor hitbox due to certain attacks cau
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="jamie">Jamie</h2>
+
+<br>
 
 > <h4>Crouching Light Attack</h4>
 <p>
@@ -117,7 +125,11 @@ Fixed an issue where inputting a throw 1 frame after inputting a Drive Parry wou
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="kimberly">Kimberly</h2>
+
+<br>
 
 > <h4>Bushin Ninjastar Cypher (Level 3 Super Art)</h4>
 <p>
@@ -126,7 +138,11 @@ Fixed an issue where Kimberly's level 3 Super Art would hit opponents behind her
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="marisa">Marisa</h2>
+
+<br>
 
 > <h4>When playing with Modern Controls <br>
 > Enfold (Down+Punch) during Scutum (Forward+Special)</h4>
@@ -140,7 +156,11 @@ We've fixed this issue so that the Scutum stance will continue to be held if you
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="lily">Lily</h2>
+
+<br>
 
 > <h4>Modern Controls</h4>
 
@@ -173,7 +193,11 @@ Fixed an issue where an opponent would not be KO'd if the move connected in mid-
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="jp">JP</h2>
+
+<br>
 
 > <h4>Modern Controls</h4>
 
@@ -186,7 +210,11 @@ Fixed an issue where certain Overdrive attacks would not be performed if manuall
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="juri">Juri</h2>
+
+<br>
 
 > <h4>Boosted Saihasho<br>
 > Boosted Ankensatsu<br>
@@ -200,7 +228,11 @@ Fixed an issue where these moves could be kara canceled* on their 1st frame with
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="dee-jay">Dee Jay</h2>
+
+<br>
 
 > <h4>Modern Controls</h4>
 
@@ -226,7 +258,11 @@ Fixed an issue where opponents suffered a greater Drive Gauge loss on a Punish C
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="cammy">Cammy</h2>
+
+<br>
 
 > <h4>Cannon Strike (Heavy version)</h4>
 
@@ -245,7 +281,11 @@ Along with this fix, there have been some minor changes made to the behavior of 
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="ryu">Ryu</h2>
+
+<br>
 
 > <h4>Modern Controls</h4>
 
@@ -264,7 +304,11 @@ Fixed an issue where unnecessary combo scaling was added in certain situations, 
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="e.-honda">E. Honda</h2>
+
+<br>
 
 > <h4>Crouching Light Punch (rapid cancel version)</h4>
 
@@ -283,7 +327,11 @@ Frame Data
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="blanka">Blanka</h2>
+
+<br>
 
 > <h4>Charging Attacks with Modern Controls</h4>
 
@@ -341,7 +389,11 @@ With the above adjustment, the recovery on block has unintentionally changed fro
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="chun-li">Chun-Li</h2>
+
+<br>
 
 > <h4>Charging Attacks with Modern Controls</h4>
 
@@ -373,7 +425,11 @@ Fixed a phenomenon where canceling certain attacks into Serenity Stream and then
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="zangief">Zangief</h2>
+
+<br>
 
 > <h4>Aerial Russian Slam (Level 1 Super Art)</h4>
 
@@ -388,7 +444,11 @@ Fixed an issue where Zangief's Drive Gauge would recover slower than other chara
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
+<br>
+
 <h2 id="dhalsim">Dhalsim</h2>
+
+<br>
 
 > <h4>Agile Kick (Rapid cancel version)</h4>
 
@@ -410,3 +470,6 @@ Fixed an issue where players would become unable to perform mid-air techniques a
 
 <strong><a href="/patch-history/docs/street-fighter-6/2023-07-24-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong> - <strong><a href="/patch-history/docs/street-fighter-6/" style="text-decoration: none;">back to patch list</a></strong>
 
+<br>
+
+---
