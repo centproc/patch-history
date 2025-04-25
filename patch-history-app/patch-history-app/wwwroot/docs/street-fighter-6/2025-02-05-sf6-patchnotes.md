@@ -1,4 +1,6 @@
 # 2025-02-05 - SF6 PATCHNOTES
+---
+<br>
 
 <h3 id="top">General Changes</h3>
 
