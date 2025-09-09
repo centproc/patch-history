@@ -72,13 +72,6 @@ Fixed an issue where under specific conditions, a Perfect Parry would occur even
 Fixed an issue with the input buffer, as the input buffer time for a reversal after blocking an attack should change depending on the block's recovery, but for Drive Reversals and some other attacks, it was not properly set.
 </p>
 
-<table class="table-style">
-<thead><tr><th>Changes</th><th>Category</th><th>Adjustment Details</th></tr></thead>
-<tbody>
-<tr><td></td><td></td><td></td></tr>
-</tbody>
-</table>
-
 <!-- Section Index -->
 <h3>Specific character updates this patch</h3>
 <table class="character-table-style">
