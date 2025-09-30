@@ -175,3 +175,59 @@ blockquote {
   .character-table-style td:hover {
     background-color: #e0eaff;
   }
+  
+  /* Container card */
+.patch-note-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover interaction */
+.patch-note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Header row (date + PR #) */
+.patch-note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Title of the patch note */
+.patch-note-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.75rem;
+}
+
+/* Category/metadata row */
+.patch-note-meta {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Details section */
+.patch-note-details {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.patch-note-details a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.patch-note-details a:hover {
+  text-decoration: underline;
+}
