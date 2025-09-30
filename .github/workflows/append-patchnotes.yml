@@ -13,6 +13,7 @@ jobs:
   update-website-patchnotes:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -22,6 +23,13 @@ jobs:
       - name: Build entry from PR body (checkboxes) and labels
         id: build_entry
         shell: bash
+        env:
+          PR_TITLE:  ${{ github.event.pull_request.title }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_URL:    ${{ github.event.pull_request.html_url }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_BODY:   ${{ github.event.pull_request.body }}
+          PR_LABELS: ${{ join(github.event.pull_request.labels.*.name, ', ') }}
         run: |
           set -euo pipefail
 
@@ -30,13 +38,14 @@ jobs:
           touch "$FILE"
 
           DATE=$(date -u +"%Y-%m-%d")
-          TITLE='${{ github.event.pull_request.title }}'
-          NUMBER='${{ github.event.pull_request.number }}'
-          URL='${{ github.event.pull_request.html_url }}'
-          AUTHOR='${{ github.event.pull_request.user.login }}'
-          BODY='${{ github.event.pull_request.body }}'
+          TITLE="${PR_TITLE}"
+          NUMBER="${PR_NUMBER}"
+          URL="${PR_URL}"
+          AUTHOR="${PR_AUTHOR}"
+          BODY="${PR_BODY:-}"
+          LABELS="${PR_LABELS:-}"
 
-          # Checked categories from PR body ("- [x] foo")
+          # Checked categories from PR body lines like: "- [x] ui"
           mapfile -t CAT_LINES < <(printf '%s\n' "$BODY" | grep -Ei '^\s*-\s*\[[xX]\]\s*.+') || true
           CATS_FROM_BODY=""
           if (( ${#CAT_LINES[@]} > 0 )); then
@@ -46,10 +55,6 @@ jobs:
               | sed 's/,/, /g')
           fi
 
-          # Labels as fallback/supplement
-          LABELS=$(jq -r '[.pull_request.labels[].name] | join(", ")' <<< '${{ toJson(github.event) }}')
-          [ "$LABELS" = "null" ] && LABELS=""
-
           if [ -n "$CATS_FROM_BODY" ] && [ -n "$LABELS" ]; then
             CATEGORY="$CATS_FROM_BODY, $LABELS"
           elif [ -n "$CATS_FROM_BODY" ]; then
@@ -58,7 +63,7 @@ jobs:
             CATEGORY="$LABELS"
           fi
 
-          # Build HTML block via heredoc. Keep indentation exactly as-is.
+          # Build HTML entry (heredoc; keep indentation)
           read -r -d '' ENTRY << 'EOF'
           ### ${DATE} — PR #${NUMBER}: ${TITLE}
 
