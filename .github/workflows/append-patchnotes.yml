@@ -52,7 +52,27 @@ jobs:
           BODY="${PR_BODY:-}"
           LABELS="${PR_LABELS:-}"
 
-          # Checked categories from PR body lines like: "- [x] ui"
+          # -------- helpers --------
+          esc_html() {
+            # Minimal HTML escaping: &, <, >
+            printf '%s' "$1" | sed -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g'
+          }
+          nl2br() {
+            # Normalize CRLF, then convert newlines to <br>
+            sed -e 's/\r//g' -e ':a;N;$!ba;s/\n/<br>/g'
+          }
+          extract_section() {
+            # $1 = heading (e.g., "Summary" or "Details")
+            # Grab text from "### Heading" up to next "### " or end
+            awk -v H="### $1" '
+              BEGIN{found=0}
+              $0 ~ "^"H"[[:space:]]*$" {found=1; next}
+              found && $0 ~ "^### " {found=0}
+              found {print}
+            '
+          }
+
+          # -------- categories (checkbox + labels) --------
           mapfile -t CAT_LINES < <(printf '%s\n' "$BODY" | grep -Ei '^\s*-\s*\[[xX]\]\s*.+') || true
           CATS_FROM_BODY=""
           if (( ${#CAT_LINES[@]} > 0 )); then
@@ -61,7 +81,6 @@ jobs:
               | paste -sd',' - \
               | sed 's/,/, /g')
           fi
-
           if [ -n "$CATS_FROM_BODY" ] && [ -n "$LABELS" ]; then
             CATEGORY="$CATS_FROM_BODY, $LABELS"
           elif [ -n "$CATS_FROM_BODY" ]; then
@@ -70,20 +89,40 @@ jobs:
             CATEGORY="$LABELS"
           fi
 
-          ENTRY="$(cat << 'EOF'
-          ### ${DATE} — PR #${NUMBER}: ${TITLE}
+          # -------- extract Summary / Details from PR body --------
+          RAW_SUMMARY="$(printf '%s' "$BODY" | extract_section "Summary" || true)"
+          RAW_DETAILS="$(printf '%s' "$BODY" | extract_section "Details" || true)"
 
+          # Fallbacks if author didn’t fill sections
+          if [ -z "${RAW_SUMMARY// }" ]; then
+            # Use first 300 chars of body as a summary fallback
+            RAW_SUMMARY="$(printf '%s' "$BODY" | head -c 300)"
+          fi
+          [ -z "${RAW_DETAILS// }" ] && RAW_DETAILS="(No additional details provided.)"
+
+          SAFE_SUMMARY="$(esc_html "$RAW_SUMMARY" | nl2br)"
+          SAFE_DETAILS="$(esc_html "$RAW_DETAILS" | nl2br)"
+          SAFE_CATEGORY="$(esc_html "$CATEGORY")"
+
+          # -------- build card --------
+          ENTRY="$(cat << 'EOF'
           <div class="patch-note-card">
             <div class="patch-note-header">
-                <span class="patch-note-date">${DATE}</span>
-                <span class="patch-note-pr">PR #${NUMBER}</span>
+              <span class="patch-note-date">${DATE}</span>
+              <span class="patch-note-pr">PR #${NUMBER}</span>
             </div>
             <h4 class="patch-note-title">${TITLE}</h4>
-            <div class="patch-note-meta">
-                <strong>Category:</strong> ${CATEGORY}
+            <div class="patch-note-meta"><strong>Category:</strong> ${SAFE_CATEGORY}</div>
+            <div class="patch-note-section">
+              <h5>Summary</h5>
+              <div class="patch-note-text">${SAFE_SUMMARY}</div>
+            </div>
+            <div class="patch-note-section">
+              <h5>Details</h5>
+              <div class="patch-note-text">${SAFE_DETAILS}</div>
             </div>
             <div class="patch-note-details">
-                Merged by @${AUTHOR}. See <a href="${URL}">${URL}</a>.
+              Merged by @${AUTHOR}. See <a href="${URL}">${URL}</a>.
             </div>
           </div>
 
@@ -91,7 +130,7 @@ jobs:
           )"
           ENTRY=$(eval "echo \"${ENTRY}\"")
 
-          # Prepend under H1 if present; else create H1 and prepend
+          # -------- prepend under H1, or create H1 then prepend --------
           if head -n1 "$FILE" | grep -qE '^# '; then
             awk -v entry="$ENTRY" '
               NR==1 && $0 ~ /^# / { print; print ""; print entry; next }

@@ -1,12 +1,14 @@
+Note: this information is important for the auto-generating patch notes for the site and other automations
+
 ### Summary
 Short description of the change.
 
-### Category (labels recommended)
+### Category
 - [ ] feature
 - [ ] ui
 - [ ] docs
 - [ ] bugfix
 - [ ] other
 
-### Details (will show in patch notes)
+### Details
 User-visible impact, notes, links, etc.
