@@ -32,6 +32,7 @@ jobs:
           PR_LABELS: ${{ join(github.event.pull_request.labels.*.name, ', ') }}
         run: |
           set -euo pipefail
+          # set -x  # uncomment for verbose debugging
 
           FILE="wwwroot/docs/website-patchnotes.md"
           mkdir -p "$(dirname "$FILE")"
@@ -63,8 +64,8 @@ jobs:
             CATEGORY="$LABELS"
           fi
 
-          # Build HTML entry (heredoc; keep indentation)
-          read -r -d '' ENTRY << 'EOF'
+          # Build HTML entry safely (avoid read -d '')
+          ENTRY="$(cat << 'EOF'
           ### ${DATE} — PR #${NUMBER}: ${TITLE}
 
           <table class="custom-table">
@@ -81,7 +82,9 @@ jobs:
           </table>
 
           EOF
+          )"
 
+          # Expand variables inside the heredoc content
           ENTRY=$(eval "echo \"${ENTRY}\"")
 
           # Prepend under H1 if present; else create H1 and prepend
