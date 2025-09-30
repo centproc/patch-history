@@ -20,6 +20,13 @@ jobs:
         with:
           ref: main
 
+      - name: Show layout (debug)
+        run: |
+          pwd
+          ls -al
+          ls -al patch-history-app || true
+          ls -al patch-history-app/patch-history-app || true
+
       - name: Build entry from PR body (checkboxes) and labels
         id: build_entry
         shell: bash
@@ -32,9 +39,8 @@ jobs:
           PR_LABELS: ${{ join(github.event.pull_request.labels.*.name, ', ') }}
         run: |
           set -euo pipefail
-          # set -x  # uncomment for verbose debugging
 
-          FILE="wwwroot/docs/website-patchnotes.md"
+          FILE="patch-history-app/patch-history-app/wwwroot/docs/website-patchnotes.md"
           mkdir -p "$(dirname "$FILE")"
           touch "$FILE"
 
@@ -64,7 +70,6 @@ jobs:
             CATEGORY="$LABELS"
           fi
 
-          # Build HTML entry safely (avoid read -d '')
           ENTRY="$(cat << 'EOF'
           ### ${DATE} — PR #${NUMBER}: ${TITLE}
 
@@ -83,8 +88,6 @@ jobs:
 
           EOF
           )"
-
-          # Expand variables inside the heredoc content
           ENTRY=$(eval "echo \"${ENTRY}\"")
 
           # Prepend under H1 if present; else create H1 and prepend
@@ -106,6 +109,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "docs: update website-patchnotes with PR #${{ github.event.pull_request.number }}"
-          file_pattern: wwwroot/docs/website-patchnotes.md
+          file_pattern: patch-history-app/patch-history-app/wwwroot/docs/website-patchnotes.md
           branch: main
           token: ${{ secrets.PUBLISH_TOKEN }}
