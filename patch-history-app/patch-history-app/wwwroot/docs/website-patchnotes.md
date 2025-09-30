@@ -1,5 +1,21 @@
 # Website Patch Notes
 
+### 2025-09-30 — PR #41: updating yaml and css
+
+<div class=patch-note-card>
+  <div class=patch-note-header>
+      <span class=patch-note-date>2025-09-30</span>
+      <span class=patch-note-pr>PR #41</span>
+  </div>
+  <h4 class=patch-note-title>updating yaml and css</h4>
+  <div class=patch-note-meta>
+      <strong>Category:</strong> ui
+  </div>
+  <div class=patch-note-details>
+      Merged by @centproc. See <a href=https://github.com/centproc/patch-history/pull/41>https://github.com/centproc/patch-history/pull/41</a>.
+  </div>
+</div>
+
 ### 2025-09-30 — PR #40: updating yamls
 
 <table class=custom-table>
