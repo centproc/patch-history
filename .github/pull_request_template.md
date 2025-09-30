@@ -2,6 +2,7 @@
 Short description of the change.
 
 ### Category (labels recommended)
+- [ ] feature
 - [ ] ui
 - [ ] docs
 - [ ] bugfix

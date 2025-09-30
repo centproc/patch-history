@@ -108,3 +108,4 @@ jobs:
           commit_message: "docs: update website-patchnotes with PR #${{ github.event.pull_request.number }}"
           file_pattern: wwwroot/docs/website-patchnotes.md
           branch: main
+          token: ${{ secrets.PUBLISH_TOKEN }}
