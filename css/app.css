@@ -231,3 +231,17 @@ blockquote {
 .patch-note-details a:hover {
   text-decoration: underline;
 }
+
+.patch-note-section {
+  margin: 0.75rem 0;
+}
+.patch-note-section h5 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+.patch-note-text {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
