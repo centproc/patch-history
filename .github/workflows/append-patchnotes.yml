@@ -73,18 +73,19 @@ jobs:
           ENTRY="$(cat << 'EOF'
           ### ${DATE} — PR #${NUMBER}: ${TITLE}
 
-          <table class="custom-table">
-            <thead>
-              <tr><th>Changes</th><th>Category</th><th>Adjustment Details</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>PR</td>
-                <td>${CATEGORY}</td>
-                <td>Merged by @${AUTHOR}. See <a href="${URL}">${URL}</a>.</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="patch-note-card">
+            <div class="patch-note-header">
+                <span class="patch-note-date">${DATE}</span>
+                <span class="patch-note-pr">PR #${NUMBER}</span>
+            </div>
+            <h4 class="patch-note-title">${TITLE}</h4>
+            <div class="patch-note-meta">
+                <strong>Category:</strong> ${CATEGORY}
+            </div>
+            <div class="patch-note-details">
+                Merged by @${AUTHOR}. See <a href="${URL}">${URL}</a>.
+            </div>
+          </div>
 
           EOF
           )"
