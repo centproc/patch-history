@@ -1,8 +1,25 @@
 name: 'Publish application'
-on: push
+on:
+  push:
+    branches: [ main ]
+  workflow_run:
+    workflows: ["Append Website Patch Notes on PR Merge"]
+    types: [completed]
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
 
 jobs:
   build:
+    # Only run if:
+    # - workflow_run succeeded, OR
+    # - normal push to main that isn’t the auto-patchnotes commit
+    if: >
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success')
+      || (github.event_name == 'push' &&
+          !startsWith(github.event.head_commit.message, 'docs: update website-patchnotes'))
     runs-on: ubuntu-latest
     steps:
         # Checkout the code
