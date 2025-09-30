@@ -1,0 +1,102 @@
+name: Append Website Patch Notes on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  update-website-patchnotes:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Build entry from PR body (checkboxes) and labels
+        id: build_entry
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          FILE="wwwroot/docs/website-patchnotes.md"
+          mkdir -p "$(dirname "$FILE")"
+          touch "$FILE"
+
+          DATE=$(date -u +"%Y-%m-%d")
+          TITLE='${{ github.event.pull_request.title }}'
+          NUMBER='${{ github.event.pull_request.number }}'
+          URL='${{ github.event.pull_request.html_url }}'
+          AUTHOR='${{ github.event.pull_request.user.login }}'
+          BODY='${{ github.event.pull_request.body }}'
+
+          # Checked categories from PR body ("- [x] foo")
+          mapfile -t CAT_LINES < <(printf '%s\n' "$BODY" | grep -Ei '^\s*-\s*\[[xX]\]\s*.+') || true
+          CATS_FROM_BODY=""
+          if (( ${#CAT_LINES[@]} > 0 )); then
+            CATS_FROM_BODY=$(printf '%s\n' "${CAT_LINES[@]}" \
+              | sed -E 's/^\s*-\s*\[[xX]\]\s*//g' \
+              | paste -sd',' - \
+              | sed 's/,/, /g')
+          fi
+
+          # Labels as fallback/supplement
+          LABELS=$(jq -r '[.pull_request.labels[].name] | join(", ")' <<< '${{ toJson(github.event) }}')
+          [ "$LABELS" = "null" ] && LABELS=""
+
+          if [ -n "$CATS_FROM_BODY" ] && [ -n "$LABELS" ]; then
+            CATEGORY="$CATS_FROM_BODY, $LABELS"
+          elif [ -n "$CATS_FROM_BODY" ]; then
+            CATEGORY="$CATS_FROM_BODY"
+          else
+            CATEGORY="$LABELS"
+          fi
+
+          # Build HTML block via heredoc. Keep indentation exactly as-is.
+          read -r -d '' ENTRY << 'EOF'
+          ### ${DATE} — PR #${NUMBER}: ${TITLE}
+
+          <table class="custom-table">
+            <thead>
+              <tr><th>Changes</th><th>Category</th><th>Adjustment Details</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PR</td>
+                <td>${CATEGORY}</td>
+                <td>Merged by @${AUTHOR}. See <a href="${URL}">${URL}</a>.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          EOF
+
+          ENTRY=$(eval "echo \"${ENTRY}\"")
+
+          # Prepend under H1 if present; else create H1 and prepend
+          if head -n1 "$FILE" | grep -qE '^# '; then
+            awk -v entry="$ENTRY" '
+              NR==1 && $0 ~ /^# / { print; print ""; print entry; next }
+              { print }
+            ' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
+          else
+            {
+              echo "# Website Patch Notes"
+              echo
+              echo "$ENTRY"
+              cat "$FILE"
+            } > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
+          fi
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update website-patchnotes with PR #${{ github.event.pull_request.number }}"
+          file_pattern: wwwroot/docs/website-patchnotes.md
+          branch: main

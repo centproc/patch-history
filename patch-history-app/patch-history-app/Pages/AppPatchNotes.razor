@@ -1,0 +1,38 @@
+﻿@page "/app-patchnotes"
+@inject HttpClient Http
+@using Markdig
+
+<PageTitle>Web Site Patch Notes</PageTitle>
+
+@if (_html is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @((MarkupString)_html)
+}
+
+@code {
+    private string? _html;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // the markdown file you’ll edit by hand
+            var raw = await Http.GetStringAsync("docs/website-patchnotes.md");
+
+            // optional: richer features (tables, lists, etc.)
+            var pipeline = new MarkdownPipelineBuilder()
+                .UseAdvancedExtensions()
+                .Build();
+
+            _html = Markdown.ToHtml(raw, pipeline);
+        }
+        catch
+        {
+            _html = "<p>404: Patch notes not found.</p>";
+        }
+    }
+}
