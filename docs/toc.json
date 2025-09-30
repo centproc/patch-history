@@ -1,18 +1,18 @@
 [
   {
-    "Title": "tekken-8",
-    "Slug": "tekken-8"
-  },
-  {
-    "Title": "street-fighter-6",
-    "Slug": "street-fighter-6"
-  },
-  {
     "Title": "guilty-gear-strive",
     "Slug": "guilty-gear-strive"
   },
   {
     "Title": "2xko",
     "Slug": "2xko"
+  },
+  {
+    "Title": "tekken-8",
+    "Slug": "tekken-8"
+  },
+  {
+    "Title": "street-fighter-6",
+    "Slug": "street-fighter-6"
   }
 ]

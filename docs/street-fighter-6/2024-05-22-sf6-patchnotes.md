@@ -501,65 +501,147 @@ In addition to this we've added new avenues for certain Super Arts that were har
 <table class="table-style">
 <thead><tr><th>Changes</th><th>Category</th><th>Adjustment Details</th></tr></thead>
 <tbody>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
+    <tr><td>Assisted Combo 2</td><td>Adjustment</td><td><p>Combo has now changed to the following.
+
+- When Super Art gauge has less than 1 bar
+
+Standing Medium Kick > Overdrive Vagabond Edge > Jump cancel > Jumping Medium Punch > Aerial Bushin Senpukyaku
+
+- During Burnout
+
+Standing Medium Kick > Medium Vagabond Edge</p></td></tr>
+    <tr><td>Bell Ringer(Backwards Throw)</td><td>Universal Adjustment</td><td><p>Distance increased between characters when the opponent is thrown into the corner.</p></td></tr>
+    <tr><td>Standing Light Kick</td><td>Adjustment</td><td><p>Reduced pushback.</p></td></tr>
+    <tr><td>Standing Medium Kick</td><td>Adjustment</td><td><p>Super Art gauge increase changed from 500 to 700.</p></td></tr>
+    <tr><td>Crouching Medium Punch</td><td>Adjustment</td><td><p>
+1. Damage changed from 450 to 500.
+2. Pushback reduced.</p></td></tr>
+    <tr><td>Bushin Tiger Fangs (Medium Punch > Heavy Punch)</td><td>Universal Adjustment</td><td><p>When using Classic controls, pressing Heavy Kick at the same time as the second input will cause the second attack to not come out.</p></td></tr>
+    <tr><td>Bushin Prism Strikes (Light Punch > Medium Punch)</td><td>Universal Adjustment</td><td><p>When using Classic controls, pressing Medium Kick at the same time as the second input will cause the second attack to not come out.</p></td></tr>
+    <tr><td>Normal/Overdrive Sprint (↓↘→ + Kick/Two Kicks)</td><td>Adjustment</td><td><p>Adjusted Kimberly's behavior so that she will not automatically transition into Arc Step when she comes in contact with the opponent if forward is being held in Classic controls or the SP button is being held in Modern Controls.</p></td></tr>
+    <tr><td>Normal/Overdrive Bushin Hojin Kick (↓↘→ + Kick/Two Kicks > Kick, after Arc Step)</td><td>Bug Fix</td><td><p>Added a new attack hitbox that is only applied when an opponent is in a combo, and fixed an issue where Bushin Hojin Kick would not combo properly after Arc Steps hits from a distance.</p></td></tr>
+    <tr><td>Overdrive Torso Cleaver (↓↘→ + Two Kicks > Light Kick)</td><td>Adjustment</td><td><p>Opponent's Drive gauge reduction on block changed from 4000 to 6000.</p></td></tr>
+    <tr><td>Light Vagabond Edge (↓↘→ + Light Punch)</td><td>Adjustment</td><td><p>
+1. Active frames changed from 2 to 3 frames.
+2. Recovery changed from 22 to 21 frames.
+3. Disadvantage on block changed from -6 to -5 frames.
+4. Updated so attack range does not change during active frames 1 - 2.
+
+Note: Properties tweaked so attack can hit easier on active frame 3.</p></td></tr>
+    <tr><td>Normal Bushin Senpukyaku (↓↙← + Kick)</td><td>Adjustment</td><td><p>
+1. Anti-air invincibility timing has changed from when the hitbox first appears to now occur 1 frame before the hitbox appears.
+2. From frame 1 of the technique until the attack hitbox appears, the hurtbox on the head is reduced downwards.</p></td></tr>
+    <tr><td>Medium/Heavy Bushin Senpukyaku (↓↙← + Medium/Heavy Kick)</td><td>Bug Fix</td><td><p>Fixed an issue where the hitbox on the third attack should have expanded if the first or second attack hit, but did not on counter or Punish Counter.</p></td></tr>
+    <tr><td>Normal/Overdrive Bushin Senpukyaku (↓↙← + Kick/Two Kicks)</td><td>Bug Fix</td><td><p>Fixed an issue where damage was reduced when landing a hit during the active frames of the first attack.</p></td></tr>
+    <tr><td>Overdrive Bushin Senpukyaku (↓↙← + Two Kicks)</td><td>Adjustment</td><td><p>
+1. Can be canceled into Super Art 2 during the fourth attack.
+2. Damage changed for the second, third, and fourth attacks from 180 to 200.
+3. First attack's hitbox expanded forward.
+4. Added more time to the fourth attack's blowback.
+5. Increased combo count limit.</p></td></tr>
+    <tr><td>Overdrive Nue Twister (↓↘→ + Punch, during a jump)</td><td>Adjustment</td><td><p>
+1. Changed combo scaling from 10% to 20%
+2. Increased combo count limit.</p></td></tr>
+    <tr><td>Hidden Variable (↓↙← + Punch/Two Punches)</td><td>Adjustment</td><td><p>Changed attack activation priority so that Hidden Variable has higher priority than Bushin Senpukyaku.
+Note: This also applies to the Overdrive version.</p></td></tr>
+    <tr><td>SA1 Bushin Beats/Bushin Thunderous Beats</td><td>Adjustment / Bug Fix</td><td><p>
+1. Adjusted so that Shuriken Bomb stocks are only used when the follow-up command is input after the attack's initial hit. The follow-up command is as follows.
+Classic: Hold Kick button
+Modern: Hold Light Attack, SP, or Heavy Attack
+
+2. Start-up changed from 12 to 10 frames.
+3. Collision pushbox expanded upwards.
+4. The 1st frame of the technique was completely invincible, and this has been changed to be only strike and throw invincible.
+5. The seventh attack's Drive gauge reduction is 4100 no matter if the follow-up is used or not.</p></td></tr>
+    <tr><td>SA1 Bushin Thunderous Beats</td><td>Adjustment</td><td><p>
+Damage on the final attack changed from 200 to 400.
+<br>Drive gauge reduction on the final attack changed from 4000 to 1.
+Note: This adjustment was made to ensure that the opponent's Drive gauge recovery doesn't start earlier than intended.</p></td></tr>
+    <tr><td>SA2 Bushin Scramble/Soaring Bushin Scramble</td><td>Adjustment / Bug Fix</td><td><p>
+
+Damage changed from 2600 to 2800.
+<br> Attack hitbox expanded.
+<br> A hurtbox was added as the 1st frame of the technique was completely invincible.
+<br>Note: Kimberly moves during the screen transition, so the property of avoiding attacks close to the ground has not changed.
+<br>Fixed an issue where the Drive gauge would recover during the cutscene when used in a combo that utilized Drive Rush.</p></td></tr>
+    <tr><td>SA3/CA Bushin Ninjastar Cypher</td><td>Adjustment</td><td><p>Added a new attack hitbox that is only applied when an opponent is in a combo, allowing Kimberly to hit opponents in front of her easier.</p></td></tr>
 </tbody>
 </table>
 
 <strong><a href="/patch-history/docs/street-fighter-6/2024-05-22-sf6-patchnotes#top" style="text-decoration: none;">return to top</a></strong>
 
 <h2 id="marisa">Marisa</h2>
+
+><h4>Adjustment summary
+
+<p>
+Marisa's staggering damage output from her strikes is a central core of her character, but the relentless assaults possible after landing her command throw, as well as her powerful table-turning counterattacks, made for a combination that was a little too potent at turning matches completely on their head. With this in mind, we've made her strikes more powerful, to let those traits truly shine, and then we've decreased the advantage frames of her command throw, Enfold, as well as those for her SA3 on hit. We've also adjusted the counter-attack focused moves Scutum and Overdrive Gladius to dial down their damage potential.
+
+In terms of the boosts to her strikes, each of her charged attacks now have greater advantage on contact, with the tweaks meaning that they'll also no longer leave any openings to counters on block. Falx Crusher, which was previously very situational, has also been improved on, which should make it a more attractive option when the moment presents itself and you're after a big return.
+
+In order to ease one of Marisa's weaknesses, where it could be hard to hit retreating opponents with her attacks, we've made adjustments to some moves, such as making it so that the proximity block triggers for Marisa's Standing Heavy Kick and Crouching Heavy Kick activate from the start of the moves to stop retreating opponents in their tracks. This combined with the other buffs to strikes should put them back in the spotlight on the offensive front.
+</p>
+
 <table class="table-style">
 <thead><tr><th>Changes</th><th>Category</th><th>Adjustment Details</th></tr></thead>
 <tbody>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
-    <tr><td></td><td></td><td><p></p></td></tr>
+    <tr><td>Assisted Combo 2</td><td>Adjustment</td><td><p>Combo has now changed to the following during Burnout.
+Medium Two Hitter > Medium Gladius</p></td></tr>
+    <tr><td>Marisa Style</td><td>Adjustment</td><td><p>It is now harder for the hold button version of heavy attacks to be performed by accident when rapidly pressing the heavy attack button after one of these techniques are performed.</p></td></tr>
+    <tr><td>Ponte Milvio (Backwards Throw)</td><td>Universal Adjustment</td><td><p>Distance increased between characters when the opponent is thrown into the corner.</p></td></tr>
+    <tr><td>Drive Reversal</td><td>Bug Fix</td><td><p>Fixed an issue where the advantage on this move when forcing an opponent in Burnout to block it differed from other characters.</p></td></tr>
+    <tr><td>Jumping Heavy Attacks (Charged/While Charging)</td><td>Adjustment</td><td><p>Landing recovery reduced by 3 frames.</p></td></tr>
+    <tr><td>Charged Standing Heavy Punch</td><td>Adjustment</td><td><p>
+
+1. Recovery on hit and block changed from 22 to 21 frames.
+2. Advantage on hit changed from +6 to +7 frames.
+3. Advantage on block changed from +3 to +4 frames.
+</p></td></tr>
+    <tr><td>Normal/Charged Standing Heavy Kick</td><td>Adjustment</td><td><p>
+
+1. Proximity block trigger startup changed from 4 frames prior to the end of the attack startup to the 2nd frame of the technique.
+2. Removed the hurtbox around the feet that appeared before the non-hold version's hitbox appeared.</p></td></tr>
+    <tr><td>Crouching Medium Punch</td><td>Adjustment</td><td><p>Expanded the hurtbox around the feet between frames 21 - 26 of the technique.</p></td></tr>
+    <tr><td>Normal/Charged Crouching Heavy Punch</td><td>Adjustment</td><td><p>Proximity block trigger startup changed from 4 frames prior to the end of the attack startup to the 2nd frame of the technique.</p></td></tr>
+    <tr><td>Charged Crouching Heavy Punch</td><td>Adjustment</td><td><p>Disadvantage on block changed from -5 to -3 frames.</p></td></tr>
+    <tr><td>Normal/Charged Crouching Heavy Kick</td><td>Adjustment</td><td><p>Proximity block trigger startup changed from 4 frames prior to the end of the attack startup to the 2nd frame of the technique.</p></td></tr>
+    <tr><td>Charged Crouching Heavy Kick</td><td>Adjustment</td><td><p>
+1. Recovery on hit and block changed from 23 to 20 frames.
+2. Advantage on hit changed from +32 to +35 frames.
+3. Disadvantage on block changed from -6 to -3 frames.
+4. Changed the opponent's damage reaction when hit while in the air.</p></td></tr>
+    <tr><td>Jumping Heavy Punch</td><td>Adjustment</td><td><p>Active frames changed from 5 to 7 frames.</p></td></tr>
+    <tr><td>Light Two Hitter (Light Punch > Light Punch)</td><td>Adjustment</td><td><p>Combo scaling changed from 25% to 15%</p></td></tr>
+    <tr><td>Falx Crusher (→ + Heavy Kick > → + Heavy Kick)</td><td>Adjustment</td><td><p>1. Increased forward movement before attack startup.
+2. Increased juggle state time on hit.
+3. Increased upward juggle state on hit.
+4. Increased combo count's initial value.
+5. Reduced combo count's additional value.
+6. Input buffer time changed from 5 frames to 9 frames.</p></td></tr>
+    <tr><td></td><td>Universal AdjustmentAdjustment</td><td><p>When using Classic controls, pressing Heavy Punch at the same time as the second input will cause the second attack to not come out.</p></td></tr>
+    <tr><td>Overdrive Normal/Charged Gladius (↓↘→ + Two Punches)</td><td>Adjustment</td><td><p>Initial scaling of 30% added.</p></td></tr>
+    <tr><td>Overdrive Quadriga (↓↘→ + Two Kicks)</td><td>Adjustment</td><td><p>
+1. Pushback increased.
+2. Input buffer time changed from 5 to 10 frames.</p></td></tr>
+    <tr><td>Normal/Overdrive Phalanx (→↓↘ + Punch/Two Punches)</td><td>Adjustment</td><td><p>Cannot recover backwards on Punish Counter.</p></td></tr>
+    <tr><td>Overdrive Phalanx (→↓↘ + Two Punches)</td><td>Adjustment</td><td><p>Advantage on block changed from +2 to +4 frames.</p></td></tr>
+    <tr><td>Normal/Overdrive Scutum (↓↙← + Kick/Two Kicks)</td><td>Adjustment</td><td><p>
+1. Now capable of breaking super armor.
+2. Disadvantage on block changed from -5 to -3 frames.</p></td></tr>
+    <tr><td>Enfold (↓↙← + Kick > Light Punch + Light Kick)</td><td>Adjustment</td><td><p>Advantage on hit changed from +20 to +18 frames.</p></td></tr>
+    <tr><td>SA1 Javelin of Marisa</td><td>Adjustment / Bug Fix</td><td><p>
+Attack hitbox on successful counter expanded downwards.
+<br>Fixed an issue where the Drive gauge would recover during the cutscene when used in a combo that utilized Drive Rush.
+<br>The 1st frame of the technique was completely invincible, and this has been changed to be only strike and throw invincible.</p></td></tr>
+    <tr><td>SA2 Meteorite</td><td>Adjustment / Bug Fix</td><td><p>
+Adjusted so the pushback is not applied to the second attack when it hits in the air.
+<br>Second attack's hitbox expanded forward.
+<br>Collision pushbox when jumping in the air expanded downwards.
+<br>Fixed an issue where the Drive gauge would recover during the cutscene when used in a combo that utilized Drive Rush.</p></td></tr>
+    <tr><td>SA3 Goddess of the Hunt</td><td>Adjustment</td><td><p>Advantage on hit changed from +19 to +14 frames.</p></td></tr>
+    <tr><td>CA Goddess of the Hunt</td><td>Adjustment</td><td><p>
+Changed distance from opponent after the attack hits so that it matches Super Art 3.
+Advantage on hit changed from +19 to +14 frames.</p></td></tr>
 </tbody>
 </table>
 
