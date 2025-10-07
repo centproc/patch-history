@@ -1,4 +1,24 @@
 # Website Patch Notes
+
+<div class=patch-note-card>
+  <div class=patch-note-header>
+    <span class=patch-note-date>2025-10-07</span>
+    <span class=patch-note-pr>PR #43</span>
+  </div>
+  <h4 class=patch-note-title>Added latest 2xko patchnotes + additional features</h4>
+  <div class=patch-note-meta><strong>Category:</strong> feature, docs</div>
+  <div class=patch-note-section>
+    <h5>Summary</h5>
+    <div class=patch-note-text><br>Added latest 2xko patchnotes + additional features<br></div>
+  </div>
+  <div class=patch-note-section>
+    <h5>Details</h5>
+    <div class=patch-note-text>Added the following updates -<br>* Latest 2xko notes for early access release<br>* Appendix to list out available games to prep for replacing home page functionality to search bar<br>* Added notes md file to help with quick access to icons/fonts/etc<br>* Added assets folder for future use of images in patch notes</div>
+  </div>
+  <div class=patch-note-details>
+    Merged by @centproc. See <a href=https://github.com/centproc/patch-history/pull/43>https://github.com/centproc/patch-history/pull/43</a>.
+  </div>
+</div>
 <br>
 
 <div class=patch-note-card>
