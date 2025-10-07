@@ -1,5 +1,5 @@
 # Website Patch Notes
----
+<br>
 
 <h3>September 29th, 2025</h3>
 

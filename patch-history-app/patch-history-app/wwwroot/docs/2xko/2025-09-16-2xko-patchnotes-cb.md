@@ -14,7 +14,7 @@ We’ve made several bugfixes and backend improvements, and are still investigat
 * Fixed a bug that allowed Vi to dash cancel some abilities.
 * Fixed an issue caused by Ekko’s Mega Timewinder ( Super).
 * Fixed various crashes and errors.
-* Fixed an issue that allowed Yasuo to continuously chain  attacks while tagged out. (We referred to this as the Yasuobble internally.) 
+* Fixed an issue that allowed Yasuo to continuously chain <strong>L</strong> attacks while tagged out. (We referred to this as the Yasuobble internally.) 
 
 <h3>Known Issues</h3>
 

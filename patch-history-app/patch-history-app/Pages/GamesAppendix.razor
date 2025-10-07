@@ -1,0 +1,52 @@
+@page "/gamesappendix"
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+<PageTitle>Games Appendix</PageTitle>
+
+@if (_toc == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="character-table-style">
+    <tbody>
+        <tr>
+            <td><a href="/patch-history/docs/street-fighter-6">Street Fighter 6</a></td>
+            @*<td><a href="/patch-history/docs/tekken-8">Tekken 8</a></td>
+            <td><a href="/patch-history/docs/guilty-gear-strive">Guilty Gear Strive</a></td>*@
+            <td><a href="/patch-history/docs/2xko">2XKO</a></td>
+        </tr>
+    </tbody>
+</table>
+}
+
+@code {
+    private List<TocEntry>? _toc;
+
+        protected override async Task OnInitializedAsync()
+        {
+            try
+            {
+                _toc = await Http.GetFromJsonAsync<List<TocEntry>>("docs/toc.json");
+            }
+            catch
+            {
+                _toc = null;
+            }
+        }
+    
+    public class TocEntry
+    {
+        public string Title {get; set;} = "";
+        public string Slug {get; set;} = "";
+        public List<TocPage> Pages {get; set;} = new();
+    }
+
+    public class TocPage
+    {
+        public string Title {get; set;} = "";
+        public string Slug {get; set;} = "";
+    }
+}
