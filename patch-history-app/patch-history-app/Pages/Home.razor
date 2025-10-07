@@ -4,54 +4,76 @@
 
 <PageTitle>Patch Notes - Home</PageTitle>
 
-@if (_toc == null)
-{
-    <p>Loading...</p>
-}
-else
-{
-    <h2>Latest updated game - <a href="/patch-history/docs/street-fighter-6" style="text-decoration: none;">Street Fighter 6</a></h2>
-    <br>
-    <hr>
-    <br>
+<p>
+Search for a specific game for their patch notes history
+</p>
 
-    <table class="character-table-style">
-    <tbody>
-        <tr>
-            <td><a href="/patch-history/docs/street-fighter-6">Street Fighter 6</a></td>
-            <td><a href="/patch-history/docs/tekken-8">Tekken 8</a></td>
-            <td><a href="/patch-history/docs/guilty-gear-strive">Guilty Gear Strive</a></td>
-            <td><a href="/patch-history/docs/2xko">2XKO</a></td>
-        </tr>
-    </tbody>
-</table>
-}
+<div class="search-wrap">
+  <input @bind="Query" @bind:event="oninput"
+         placeholder="Search games…"
+         class="search-input" />
+
+  @if (showDropdown)
+  {
+    <ul class="search-dropdown">
+      @if (filtered.Count == 0)
+      {
+        <li class="empty">No matches</li>
+      }
+      else
+      {
+        @foreach (var g in filtered)
+        {
+          <li>
+            <button type="button"
+                    class="result"
+                    @onclick="@(() => GoTo($"/docs/{g.Slug}"))">
+              <span class="title">@g.Title</span>
+              <span class="slug">/docs/@g.Slug</span>
+            </button>
+          </li>
+        }
+      }
+    </ul>
+  }
+</div>
 
 @code {
-    private List<TocEntry>? _toc;
+  private List<Game> games = new();
+  private List<Game> filtered = new();
+  private string query = string.Empty;
+  private bool showDropdown;
 
-        protected override async Task OnInitializedAsync()
-        {
-            try
-            {
-                _toc = await Http.GetFromJsonAsync<List<TocEntry>>("docs/toc.json");
-            }
-            catch
-            {
-                _toc = null;
-            }
-        }
-    
-    public class TocEntry
-    {
-        public string Title {get; set;} = "";
-        public string Slug {get; set;} = "";
-        public List<TocPage> Pages {get; set;} = new();
-    }
+  protected override async Task OnInitializedAsync()
+  {
+    games = await Http.GetFromJsonAsync<List<Game>>("docs/toc.json") ?? new();
+  }
 
-    public class TocPage
-    {
-        public string Title {get; set;} = "";
-        public string Slug {get; set;} = "";
-    }
+  private string Query
+  {
+    get => query;
+    set { query = value; Filter(); }
+  }
+
+  private void Filter()
+  {
+    var q = (query ?? string.Empty).Trim();
+    showDropdown = q.Length > 0;
+    if (!showDropdown) { filtered.Clear(); return; }
+
+    filtered = games
+      .Where(g => g.Title.Contains(q, StringComparison.OrdinalIgnoreCase)
+               || g.Slug.Contains(q, StringComparison.OrdinalIgnoreCase))
+      .OrderBy(g => g.Title)
+      .Take(8)
+      .ToList();
+  }
+
+  private void GoTo(string relative)
+  {
+    var url = $"{Nav.BaseUri.TrimEnd('/')}{relative}";
+    Nav.NavigateTo(url);
+  }
+
+  private class Game { public string Title { get; set; } = ""; public string Slug { get; set; } = ""; }
 }
