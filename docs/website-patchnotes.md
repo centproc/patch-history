@@ -3,6 +3,26 @@
 <div class=patch-note-card>
   <div class=patch-note-header>
     <span class=patch-note-date>2025-10-07</span>
+    <span class=patch-note-pr>PR #47</span>
+  </div>
+  <h4 class=patch-note-title>troubleshooting search bar styling</h4>
+  <div class=patch-note-meta><strong>Category:</strong> bugfix</div>
+  <div class=patch-note-section>
+    <h5>Summary</h5>
+    <div class=patch-note-text>troubleshooting search bar styling<br></div>
+  </div>
+  <div class=patch-note-section>
+    <h5>Details</h5>
+    <div class=patch-note-text>* Trying to troubleshoot the search bar css<br>* removed slug for games so only title should appear in the search result</div>
+  </div>
+  <div class=patch-note-details>
+    Merged by @centproc. See <a href=https://github.com/centproc/patch-history/pull/47>https://github.com/centproc/patch-history/pull/47</a>.
+  </div>
+</div>
+
+<div class=patch-note-card>
+  <div class=patch-note-header>
+    <span class=patch-note-date>2025-10-07</span>
     <span class=patch-note-pr>PR #46</span>
   </div>
   <h4 class=patch-note-title>update search bar styling</h4>
