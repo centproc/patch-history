@@ -3,6 +3,26 @@
 <div class=patch-note-card>
   <div class=patch-note-header>
     <span class=patch-note-date>2025-10-07</span>
+    <span class=patch-note-pr>PR #50</span>
+  </div>
+  <h4 class=patch-note-title>changing banner location</h4>
+  <div class=patch-note-meta><strong>Category:</strong> ui</div>
+  <div class=patch-note-section>
+    <h5>Summary</h5>
+    <div class=patch-note-text>changing banner location<br></div>
+  </div>
+  <div class=patch-note-section>
+    <h5>Details</h5>
+    <div class=patch-note-text>* changing the location of the banner</div>
+  </div>
+  <div class=patch-note-details>
+    Merged by @centproc. See <a href=https://github.com/centproc/patch-history/pull/50>https://github.com/centproc/patch-history/pull/50</a>.
+  </div>
+</div>
+
+<div class=patch-note-card>
+  <div class=patch-note-header>
+    <span class=patch-note-date>2025-10-07</span>
     <span class=patch-note-pr>PR #49</span>
   </div>
   <h4 class=patch-note-title>update info banner and css</h4>
