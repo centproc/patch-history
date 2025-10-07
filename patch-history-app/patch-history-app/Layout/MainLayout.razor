@@ -3,23 +3,23 @@
     @code {
         // Toggle on/off (or just comment the whole banner <div> below)
         private bool showBanner = true;
-    }
-
-    @if (showBanner)
-    {
-        <div class="info-banner">
-            <div class="info-banner__content">
-                <strong>Update:</strong> New patch notes workflow is live. If you don’t see updates, hard refresh.
-            </div>
-            <button class="info-banner__close" @onclick="() => showBanner = false" aria-label="Close">✕</button>
-        </div>
-    }   
+    } 
 
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <main>
+        @if (showBanner)
+        {
+            <div class="info-banner">
+                <div class="info-banner__content">
+                    <strong>Update:</strong> Latest patchnotes update for 2XKO. If you don’t see updates, hard refresh.
+                </div>
+                <button class="info-banner__close" @onclick="() => showBanner = false" aria-label="Close">✕</button>
+            </div>
+        }  
+
         <div class="top-row px-4">
             <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
         </div>
