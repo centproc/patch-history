@@ -4,38 +4,38 @@
 
 <PageTitle>Patch Notes - Home</PageTitle>
 
-<p>
-Search for a specific game for their patch notes history
-</p>
+<div class="home-hero">
+<h3>Search for a specific game for their patch notes history</h3>
 
-<div class="search-wrap">
-  <input @bind="Query" @bind:event="oninput"
-         placeholder="Search games…"
-         class="search-input" />
+  <div class="search-wrap">
+    <input @bind="Query" @bind:event="oninput"
+           placeholder="Search games…"
+           class="search-input" />
 
-  @if (showDropdown)
-  {
-    <ul class="search-dropdown">
-      @if (filtered.Count == 0)
-      {
-        <li class="empty">No matches</li>
-      }
-      else
-      {
-        @foreach (var g in filtered)
+    @if (showDropdown)
+    {
+      <ul class="search-dropdown">
+        @if (filtered.Count == 0)
         {
-          <li>
-            <button type="button"
-                    class="result"
-                    @onclick="@(() => GoTo($"/docs/{g.Slug}"))">
-              <span class="title">@g.Title</span>
-              <span class="slug">/docs/@g.Slug</span>
-            </button>
-          </li>
+          <li class="empty">No matches</li>
         }
-      }
-    </ul>
-  }
+        else
+        {
+          @foreach (var g in filtered)
+          {
+            <li>
+              <button type="button"
+                      class="result"
+                      @onclick="@(() => GoTo($"/docs/{g.Slug}"))">
+                <span class="title">@g.Title</span>
+                <span class="slug">@g.Slug</span>
+              </button>
+            </li>
+          }
+        }
+      </ul>
+    }
+  </div>
 </div>
 
 @code {
