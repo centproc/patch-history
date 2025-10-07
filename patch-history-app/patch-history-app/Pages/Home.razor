@@ -5,9 +5,12 @@
 <PageTitle>Patch Notes - Home</PageTitle>
 
 <div class="home-hero">
-<h3>Search for a specific game for their patch notes history</h3>
-
   <div class="search-wrap">
+    <div class="search-title">
+      <h1 class="hero-heading">Find a Game</h1>
+      <p class="hero-sub">Start typing to jump to patch notes</p>
+    </div>
+
     <input @bind="Query" @bind:event="oninput"
            placeholder="Search games…"
            class="search-input" />
@@ -24,11 +27,10 @@
           @foreach (var g in filtered)
           {
             <li>
-              <button type="button"
-                      class="result"
+              <button type="button" class="result"
                       @onclick="@(() => GoTo($"/docs/{g.Slug}"))">
                 <span class="title">@g.Title</span>
-                @*<span class="slug">@g.Slug</span>*@
+                <span class="slug">@g.Slug</span>
               </button>
             </li>
           }
@@ -45,15 +47,9 @@
   private bool showDropdown;
 
   protected override async Task OnInitializedAsync()
-  {
-    games = await Http.GetFromJsonAsync<List<Game>>("docs/toc.json") ?? new();
-  }
+    => games = await Http.GetFromJsonAsync<List<Game>>("docs/toc.json") ?? new();
 
-  private string Query
-  {
-    get => query;
-    set { query = value; Filter(); }
-  }
+  private string Query { get => query; set { query = value; Filter(); } }
 
   private void Filter()
   {
@@ -70,10 +66,7 @@
   }
 
   private void GoTo(string relative)
-  {
-    var url = $"{Nav.BaseUri.TrimEnd('/')}{relative}";
-    Nav.NavigateTo(url);
-  }
+    => Nav.NavigateTo($"{Nav.BaseUri.TrimEnd('/')}{relative}");
 
   private class Game { public string Title { get; set; } = ""; public string Slug { get; set; } = ""; }
 }
