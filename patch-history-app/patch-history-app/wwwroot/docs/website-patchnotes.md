@@ -3,6 +3,26 @@
 <div class=patch-note-card>
   <div class=patch-note-header>
     <span class=patch-note-date>2025-10-07</span>
+    <span class=patch-note-pr>PR #44</span>
+  </div>
+  <h4 class=patch-note-title>Update sf6 patches</h4>
+  <div class=patch-note-meta><strong>Category:</strong> ui</div>
+  <div class=patch-note-section>
+    <h5>Summary</h5>
+    <div class=patch-note-text>Short description of the change.<br></div>
+  </div>
+  <div class=patch-note-section>
+    <h5>Details</h5>
+    <div class=patch-note-text>* added games appendix to nav bar</div>
+  </div>
+  <div class=patch-note-details>
+    Merged by @centproc. See <a href=https://github.com/centproc/patch-history/pull/44>https://github.com/centproc/patch-history/pull/44</a>.
+  </div>
+</div>
+
+<div class=patch-note-card>
+  <div class=patch-note-header>
+    <span class=patch-note-date>2025-10-07</span>
     <span class=patch-note-pr>PR #43</span>
   </div>
   <h4 class=patch-note-title>Added latest 2xko patchnotes + additional features</h4>
