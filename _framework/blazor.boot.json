@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "patch-history-app",
   "resources": {
-    "hash": "sha256-Pt2B+OztMcwBcJEeHDyWiah2kVnRW3+Cz18hI6jlrmg=",
+    "hash": "sha256-grMSOCBUSugm5C/N2pYDURU3MNXgqb2Vy7b7I0znOGc=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-D0bzod5lwwSzPR43JC8TTCcZKw+3jIHOk8CZFCRj5is="
     },
@@ -53,7 +53,7 @@
       "System.Text.RegularExpressions.wasm": "sha256-SW5L77HZP6F1seYrYKk/8bCw55JedaRD8wTtEYIeaPY=",
       "System.Threading.wasm": "sha256-FH1BckRWyZCbzprAEwUmOVhmxmzXB93sS8lhhcLn7iQ=",
       "System.Private.CoreLib.wasm": "sha256-eIUQ7x8U5728GH5v4I5BzcTfcVrWkVZPvNFzp3k2J6w=",
-      "patch-history-app.wasm": "sha256-15nFia6zNhpHr2zzPMqFluhraZ1Lj/X5Awv0z9cR5rs="
+      "patch-history-app.wasm": "sha256-fCYwIxdRhNu3Y4U2pJipAXRfV4QWDHkkwCqm7DDxDGQ="
     }
   },
   "cacheBootResources": true,
