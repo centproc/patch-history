@@ -21,6 +21,38 @@ We’re still working on bringing 2XKO to consoles, and will share an update whe
 Read on for everything that’s changing about 2XKO in these first two updates for Season 0.
 </p>
 
+## 1.0.1.1 Updates: October 10
+
+<p>
+Some changes from 1.0.1.1 didn't make it into the patch notes, and we have a list of new bugs that we’re going to fix. We’re also clarifying the availability of bundle content.
+
+#### 1.0.1.1 Bug Fixes
+* We fixed a bug that made grounded hit stun scaling work incorrectly, which added unintended length to some of Blitzcrank's Air Purifier (↓ <strong>S1</strong>) combo routes.
+    * Blitzcrank's win rates across skill levels have been healthy so far, but we'll be keeping a close eye on their performance.
+
+### Upcoming Bug Fixes
+
+We've spotted bugs that we'll be hustling to fix in a very small patch later this month. Thanks to everyone who’s been posting to #2XKO_Bugs! You've been immensely helpful. 
+
+
+Here are the bugs on our list:
+
+* Arcane Ekko's <i>Attempt #37</i> (Ultimate) visual effects linger after certain interactions.
+* Warwick loses collision when getting interrupted by some attacks.
+* Warwick returns to his home planet when Handshake Tagging out of Spinning Slicer (mid-air <strong>S2</strong>) in Freestyle fuse.
+* Warwick’s <i>Ankle Swipe</i> (↘ <strong>H</strong>) > Primal Leap (↓ <strong>S1</strong>) combos drop on his favorite cinematic teammate, Yasuo.
+* Yasuo's recovery on Settling Gale (mid-air <strong>S1</strong> <strong>S1</strong> <strong>S2</strong>) is currently 11 frames longer than it should be, leaving Yasuo -18 on block instead of -7 as intended. We'll be adjusting his recovery to the intended length ASAP. 
+* Yasuo’s Turbulent Wind (mid-air or standing <strong>S2</strong>) applies damage scaling incorrectly.
+* Adjusting champ collision so that champions do not unexpectedly pass through each other, particularly when cornered.
+
+We've also seen some other lower-impact bugs that we'll get to in a later patch, so have fun with Teemo's floating mushrooms while you can.
+
+### Store and Cosmetics
+
+Added more clarity to Bundle, Starter Edition, and Mega Bundle availability—see the Store and Cosmetics section below.
+</p>
+
+
 ## New Content
 
 <p>
