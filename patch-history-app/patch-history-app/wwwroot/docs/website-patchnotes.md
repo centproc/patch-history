@@ -2,6 +2,26 @@
 
 <div class=patch-note-card>
   <div class=patch-note-header>
+    <span class=patch-note-date>2025-10-12</span>
+    <span class=patch-note-pr>PR #51</span>
+  </div>
+  <h4 class=patch-note-title>updating 10-06 2xko patchnotes</h4>
+  <div class=patch-note-meta><strong>Category:</strong> docs</div>
+  <div class=patch-note-section>
+    <h5>Summary</h5>
+    <div class=patch-note-text>updating 10-06 2xko patchnotes<br></div>
+  </div>
+  <div class=patch-note-section>
+    <h5>Details</h5>
+    <div class=patch-note-text>Patch notes were edited on the main site, adding the edit here</div>
+  </div>
+  <div class=patch-note-details>
+    Merged by @centproc. See <a href=https://github.com/centproc/patch-history/pull/51>https://github.com/centproc/patch-history/pull/51</a>.
+  </div>
+</div>
+
+<div class=patch-note-card>
+  <div class=patch-note-header>
     <span class=patch-note-date>2025-10-07</span>
     <span class=patch-note-pr>PR #50</span>
   </div>
